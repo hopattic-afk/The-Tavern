@@ -34,3 +34,5 @@ Critical path: `#1 -> (#2 + #3) -> #4 -> #5 -> #10`. Commerce: `#2 + #3 -> #6 ->
 Existing Issues #2-#10 provide the measurable acceptance criteria for their deliverables. This roadmap sequences them without weakening those criteria.
 
 Issue #2/#3 checkpoint: Issue #2 may provisionally approve Tavern-only palette, typography, wordmark, and non-character mark. Final mascot lockup, character accents, and ALE badge stay blocked until Issue #3 and authority gates are complete.
+
+Issue #3 handoff gate: the provisional seven-character universe and Bramble mascot recommendation do not unblock #6/#7/#9 production until name/trademark screening, similarity/privacy review, Sentinel review, founder roster/mascot approval, and #2 mascot-lockup review are recorded.

@@ -1,0 +1,16 @@
+# Decision log
+
+Use statuses `Proposed`, `Accepted`, or `Superseded`. Acceptance means the named authority approved the choice; a repository default is not founder approval.
+
+| ID | Date | Status | Decision | Rationale | Authority / follow-up |
+|---|---|---|---|---|---|
+| D-001 | 2026-07-11 | Accepted | GitHub is source control and this repository is the separated Tavern workspace. | Issue #1 direction. | Issue #1 |
+| D-002 | 2026-07-11 | Proposed | Use Astro for the custom frontend. | Content-first site, minimal JS, static delivery, component support. | Validate in #4/#5; founder approves material change. |
+| D-003 | 2026-07-11 | Accepted | Prefer Netlify; previews remain private until approved. | Issue #1 direction and reversible review flow. | Public deployment needs founder approval. |
+| D-004 | 2026-07-11 | Accepted | Fourthwall owns commerce and checkout. | Avoid custom payments and operational risk. | Verify supported integration in #5; purchases/store opening need founder approval. |
+| D-005 | 2026-07-11 | Accepted | Raw incident submissions and consent records never live in the public repository. | Privacy, withdrawal, access, and retention needs. | Select provider/model in #8 with founder approval. |
+| D-006 | 2026-07-11 | Accepted | Issue #10 and explicit founder go/no-go control public launch. | Prevent assumption-based publication. | Record evidence and approvals in launch review. |
+
+## Pending decisions
+
+Fourthwall integration method; exact visual identity; mascot/roster; submission and email providers; analytics/consent; domain; legal jurisdiction/business identity; final legal text; content schema; performance budgets; ALE commercial-use authority.

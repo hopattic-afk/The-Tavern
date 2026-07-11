@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.astro/
+dist/
+.netlify/
+.vercel/
+coverage/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+submissions/
+private/

@@ -1,0 +1,1 @@
+{"active":false,"events":["nav_select","cta_select","view_merch","fourthwall_handoff","view_tale","play_tale","view_character","incident_form_unavailable","email_signup_start","email_signup_result","social_handoff","legal_view","form_error"],"prohibited":["free_text","email","member_id","coordinates","payment_data","private_content"]}

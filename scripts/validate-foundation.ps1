@@ -9,6 +9,7 @@ $required = @(
   'docs/DECISION_LOG.md', 'docs/ASSET_RIGHTS_REGISTER.md',
   'content/README.md', 'public/README.md',
   'components/README.md', 'scripts/validate-foundation.ps1'
+  'scripts/validate-brand.ps1'
 )
 
 $missing = $required | Where-Object { -not (Test-Path -LiteralPath $_) }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">The Tavern crooked tankard concept</title><desc id="desc">Original tankard shaped T monogram beside the Tavern wordmark.</desc>
+  <rect width="640" height="240" fill="#171512"/>
+  <path d="M52 53 Q123 37 194 53 L187 82 L145 85 L139 183 Q110 194 81 183 L76 85 L45 82 Z" fill="#D9A441"/>
+  <path d="M142 96 Q203 87 201 137 Q199 171 151 165" fill="none" stroke="#D9A441" stroke-width="18"/>
+  <text x="235" y="126" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#FFF8E8">THE TAVERN</text>
+  <text x="238" y="164" font-family="Arial,sans-serif" font-size="22" letter-spacing="4" fill="#D9A441">BAD PLANS. STRONG RALLIES.</text>
+</svg>

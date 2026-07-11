@@ -1,0 +1,17 @@
+:root {
+  --tavern-soot-950: #171512;
+  --tavern-soot-800: #2b2721;
+  --tavern-parchment-100: #f4e7c5;
+  --tavern-parchment-50: #fff8e8;
+  --tavern-ale-gold-500: #d9a441;
+  --tavern-dumpster-green-500: #4f7a57;
+  --tavern-ember-500: #c85a3a;
+  --tavern-ink-900: #211d18;
+  --tavern-font-body: "Atkinson Hyperlegible", Arial, sans-serif;
+  --tavern-font-display: Spectral, Georgia, serif;
+  --tavern-space-1: 0.25rem;
+  --tavern-space-2: 0.5rem;
+  --tavern-space-4: 1rem;
+  --tavern-space-6: 1.5rem;
+  --tavern-space-8: 2rem;
+}

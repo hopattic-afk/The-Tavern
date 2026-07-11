@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">The Tavern social-safe mark</title><desc id="desc">Provisional tankard T centered within a circular crop-safe field.</desc>
+  <rect width="1080" height="1080" fill="#171512"/><circle cx="540" cy="540" r="380" fill="#2B2721" stroke="#D9A441" stroke-width="24"/>
+  <path d="M330 310 Q510 265 690 310 L672 395 L570 402 L557 750 Q478 782 399 750 L386 402 L306 395 Z" fill="#D9A441"/>
+  <path d="M566 435 Q760 410 752 570 Q746 690 592 670" fill="none" stroke="#D9A441" stroke-width="58"/>
+</svg>

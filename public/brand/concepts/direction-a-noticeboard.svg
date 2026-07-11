@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">The Tavern noticeboard concept</title><desc id="desc">Original crooked noticeboard with a simple Tavern wordmark.</desc>
+  <rect width="640" height="240" fill="#171512"/>
+  <path d="M70 45 L570 30 L585 190 L55 205 Z" fill="#F4E7C5" stroke="#D9A441" stroke-width="8"/>
+  <circle cx="92" cy="68" r="10" fill="#2B2721"/><circle cx="548" cy="57" r="10" fill="#2B2721"/>
+  <text x="320" y="142" text-anchor="middle" font-family="Georgia,serif" font-size="70" font-weight="700" fill="#211D18">THE TAVERN</text>
+  <path d="M148 166 H492" stroke="#4F7A57" stroke-width="10" stroke-linecap="round"/>
+</svg>

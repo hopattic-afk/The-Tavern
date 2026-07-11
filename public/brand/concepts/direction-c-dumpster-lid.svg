@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">The Tavern hinged lid concept</title><desc id="desc">Original abstract hinged lid forming a letter T.</desc>
+  <rect width="640" height="240" fill="#171512"/>
+  <path d="M48 54 L210 38 L216 76 L151 83 L163 186 L105 191 L94 89 L54 93 Z" fill="#4F7A57" stroke="#D9A441" stroke-width="7"/>
+  <circle cx="70" cy="79" r="7" fill="#171512"/><circle cx="191" cy="66" r="7" fill="#171512"/>
+  <text x="245" y="139" font-family="Arial,sans-serif" font-size="74" font-weight="800" fill="#F4E7C5">THE TAVERN</text>
+</svg>

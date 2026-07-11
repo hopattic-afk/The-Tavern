@@ -32,3 +32,5 @@ Critical path: `#1 -> (#2 + #3) -> #4 -> #5 -> #10`. Commerce: `#2 + #3 -> #6 ->
 - Launch gate: Issue #10 has no critical blocker and founder explicitly approves public deployment/store/social publication.
 
 Existing Issues #2-#10 provide the measurable acceptance criteria for their deliverables. This roadmap sequences them without weakening those criteria.
+
+Issue #2/#3 checkpoint: Issue #2 may provisionally approve Tavern-only palette, typography, wordmark, and non-character mark. Final mascot lockup, character accents, and ALE badge stay blocked until Issue #3 and authority gates are complete.

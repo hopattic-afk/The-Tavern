@@ -4,6 +4,15 @@
 
 Issue #3 will create five to seven original recurring trash pandas, select one primary mascot, and coordinate visual rules with Issue #2. Characters must work by silhouette, expression, clothing, accent color, prop, and behavior rather than labels.
 
+## Issue #2 interface — provisional
+
+- Character art must remain readable against Soot 950 and Parchment 50, with one accent selected from Gold, Green, Ember, or an Issue #3 extension that passes contrast review.
+- At avatar scale, silhouette and face mask must survive a circular 760/1080 safe area without labels.
+- Use clean outer contours and limited interior detail; animation and embroidery constraints take priority over texture.
+- The non-character tankard mark must work independently. A future mascot lockup may be designed only after Issue #3 approval and must not alter the base mark without Issue #2 review.
+- Character typography uses the same Atkinson/Spectral system; catchphrases do not become logo elements by default.
+- Issue #3 owns names, designs, poses, expressions, props, biographies, and roster. Issue #2 owns reproduction, color, type, clear-space, and co-brand rules.
+
 ## Candidate ensemble
 
 The Innkeeper, War Raccoon, Quartermaster, Drunk Strategist, Diplomat, New Recruit, and Sleeper are provisional archetype prompts, not approved names/designs or real-member portraits. Issue #3 must perform and record an originality and confusing-similarity review before any name, silhouette, costume, prop combination, or character design is approved.

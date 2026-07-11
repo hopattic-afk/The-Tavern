@@ -10,6 +10,8 @@ Use statuses `Proposed`, `Accepted`, or `Superseded`. Acceptance means the named
 | D-004 | 2026-07-11 | Accepted | Fourthwall owns commerce and checkout. | Avoid custom payments and operational risk. | Verify supported integration in #5; purchases/store opening need founder approval. |
 | D-005 | 2026-07-11 | Accepted | Raw incident submissions and consent records never live in the public repository. | Privacy, withdrawal, access, and retention needs. | Select provider/model in #8 with founder approval. |
 | D-006 | 2026-07-11 | Accepted | Issue #10 and explicit founder go/no-go control public launch. | Prevent assumption-based publication. | Record evidence and approvals in launch review. |
+| D-007 | 2026-07-11 | Proposed | Use the Tavern-only Crooked Tankard direction with Atkinson Hyperlegible body/UI and Spectral display type. | Distinctive at small sizes, accessible reading, no character dependency. | Sentinel review and founder identity-gate approval; fonts remain blocked pending package evidence. |
+| D-008 | 2026-07-11 | Accepted | Issue #2 defines the non-character identity interface; Issue #3 owns roster and mascot. | Prevent overlapping ownership and premature mascot lock. | Revisit only through coordinated #2/#3 decision. |
 
 ## Pending decisions
 

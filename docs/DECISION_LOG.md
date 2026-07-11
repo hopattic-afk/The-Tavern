@@ -13,6 +13,7 @@ Use statuses `Proposed`, `Accepted`, or `Superseded`. Acceptance means the named
 | D-007 | 2026-07-11 | Proposed | Use the Tavern-only Crooked Tankard direction with Atkinson Hyperlegible body/UI and Spectral display type. | Distinctive at small sizes, accessible reading, no character dependency. | Sentinel review and founder identity-gate approval; fonts remain blocked pending package evidence. |
 | D-008 | 2026-07-11 | Accepted | Issue #2 defines the non-character identity interface; Issue #3 owns roster and mascot. | Prevent overlapping ownership and premature mascot lock. | Revisit only through coordinated #2/#3 decision. |
 | D-009 | 2026-07-11 | Proposed | Use the seven-character provisional roster and recommend Bramble Bung as mascot candidate. | Covers distinct comedy functions; Bramble has strongest brand breadth and 91/100 provisional score. | Name/trademark and similarity review, Sentinel review, founder roster/mascot approval; lockup returns to #2. |
+| D-010 | 2026-07-11 | Proposed | Adopt the Issue #4 sitemap, mobile-first component architecture, performance budgets, and inactive privacy-safe analytics taxonomy. | Provides implementation-ready evidence without integrations or irreversible identity assumptions. | Sentinel review and founder design-architecture approval before #5 implementation. |
 
 ## Pending decisions
 

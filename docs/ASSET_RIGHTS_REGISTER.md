@@ -18,6 +18,7 @@ This is the canonical rights inventory. Create one row per asset before it is ad
 | CHAR-SVG-006 | `public/characters/pip-kindling.svg` and `production/pip-kindling-sheet.svg` | artwork | Original repository geometry | Project-owned source; approvals pending | Internal review only | yes | none | Git history | Name/trademark and human similarity review pending | Unassigned / pending | blocked |
 | CHAR-SVG-007 | `public/characters/drowse-coalpaw.svg` and `production/drowse-coalpaw-sheet.svg` | artwork | Original repository geometry | Project-owned source; approvals pending | Internal review only | yes | none | Git history | Name/trademark and human similarity review pending | Unassigned / pending | blocked |
 | CHAR-SVG-008 | `public/characters/ensemble-lineup.svg` | artwork | Original repository geometry | Project-owned source; approvals pending | Internal review only | yes | none | Git history | Composite similarity review pending | Unassigned / pending | blocked |
+| DESIGN-SVG-001 | `design/wireframes/mobile-all-pages.svg` and `design/wireframes/desktop-all-pages.svg` | design evidence | Original repository geometry | Project-owned source; design approval pending | Internal review only | yes | none | Git history | Contains placeholders only; human review pending | Unassigned / pending | blocked |
 
 ## Rules
 

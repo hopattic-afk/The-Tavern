@@ -14,4 +14,14 @@
   --tavern-space-4: 1rem;
   --tavern-space-6: 1.5rem;
   --tavern-space-8: 2rem;
+  --tavern-page-background: var(--tavern-soot-950);
+  --tavern-surface-dark: var(--tavern-soot-800);
+  --tavern-surface-light: var(--tavern-parchment-50);
+  --tavern-text-on-dark: var(--tavern-parchment-100);
+  --tavern-text-on-light: var(--tavern-ink-900);
+  --tavern-action-primary: var(--tavern-ale-gold-500);
+  --tavern-focus-ring: var(--tavern-ale-gold-500);
+  --tavern-warning-background: var(--tavern-parchment-50);
+  --tavern-warning-foreground: var(--tavern-ink-900);
+  --tavern-warning-border-nontext: var(--tavern-ember-500);
 }

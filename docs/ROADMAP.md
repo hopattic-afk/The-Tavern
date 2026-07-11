@@ -36,3 +36,5 @@ Existing Issues #2-#10 provide the measurable acceptance criteria for their deli
 Issue #2/#3 checkpoint: Issue #2 may provisionally approve Tavern-only palette, typography, wordmark, and non-character mark. Final mascot lockup, character accents, and ALE badge stay blocked until Issue #3 and authority gates are complete.
 
 Issue #3 handoff gate: the provisional seven-character universe and Bramble mascot recommendation do not unblock #6/#7/#9 production until name/trademark screening, similarity/privacy review, Sentinel review, founder roster/mascot approval, and #2 mascot-lockup review are recorded.
+
+Issue #4 handoff gate: design evidence uses provisional #2/#3 placeholders and keeps incident collection, analytics, forms, providers and Fourthwall integration inactive. Issue #5 implementation is blocked until Sentinel and founder approve the design architecture; that approval does not authorize deployment or publication.

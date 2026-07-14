@@ -1,0 +1,5 @@
+{"status":"production-candidate-not-print-ready","targetRasterDpi":300,"vendorDimensions":"TBD — exact product and print-area evidence required","colorProfile":"TBD — vendor requirement required","exports":[
+  {"design":"D01","master":"merch/drop-01/art/D01-crooked-tankard-dark.svg","variants":["dark","light","one-color"],"rasterExport":"blocked","reason":"Vendor pixel dimensions and color profile unknown"},
+  {"design":"D02","master":"merch/drop-01/art/D02-bad-plans-pennant-dark.svg","variants":["dark","light","one-color"],"rasterExport":"blocked","reason":"Vendor pixel dimensions and color profile unknown"},
+  {"design":"D03","master":"merch/drop-01/art/D03-structural-tab-dark.svg","variants":["dark","light","one-color"],"rasterExport":"blocked","reason":"Vendor pixel dimensions, mascot approval and color profile unknown"}
+],"checksums":"See CHECKSUMS.sha256; regenerate after any art change."}

@@ -40,3 +40,5 @@ Issue #3 handoff gate: the provisional seven-character universe and Bramble masc
 Issue #4 handoff gate: design evidence uses provisional #2/#3 placeholders and keeps incident collection, analytics, forms, providers and Fourthwall integration inactive. Issue #5 implementation is blocked until Sentinel and founder approve the design architecture; that approval does not authorize deployment or publication.
 
 Issue #5 implementation checkpoint: a reversible local Astro build may use clearly labeled provisional #2/#3/#4 inputs. Completion still requires an approved private Netlify preview and verified Fourthwall handoff. Netlify linking/deployment, providers, credentials, collection, analytics, commerce activation and publication remain founder gates.
+
+Issue #6 implementation checkpoint: Drop 01 has a provisional 10 → 5 → 3 concept package across four product types. D01/D02 remain blocked on #2; D03 remains blocked on #2/#3. Vendor specifications, costs, prices, margins, production/shipping facts, account/product creation, sample spending, physical QA and sale activation remain unresolved gates. #10 owns final store-opening approval.

@@ -25,3 +25,5 @@ Only founder-approved, public-safe copy and metadata belongs in `content/`; see 
 ## Publication
 
 Issue #9 prepares content but does not publish it. Every item completes IP/privacy review and founder approval before an external action.
+
+The local Issue #9 package in `social/` remains draft/internal-review with null URLs, account and schedule IDs and `publicationAuthorized: false`. Live platform rules, every dependency and every per-item review remain blocked.

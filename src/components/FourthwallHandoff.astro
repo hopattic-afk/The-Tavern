@@ -1,0 +1,6 @@
+---
+import { fourthwallUrl } from '../data/site';
+interface Props { path?:string; label?:string; }
+const { path='', label='Continue to Fourthwall' }=Astro.props; const url=fourthwallUrl(path);
+---
+<div class="handoff"><p>Products, checkout, payments, taxes, printing, fulfillment, shipping and orders are handled by Fourthwall. The Tavern does not collect payment information.</p>{url?<a class="button" href={url} rel="external nofollow">{label}<span class="sr-only"> (opens Fourthwall)</span></a>:<span class="button disabled" aria-disabled="true">Store not connected</span>}</div>

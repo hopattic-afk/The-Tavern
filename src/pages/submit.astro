@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/BaseLayout.astro'; import PageIntro from '../components/PageIntro.astro'; import DisabledForm from '../components/DisabledForm.astro'; import {disclaimer} from '../data/site';
+---
+<Base title="Submit an Incident" description="Incident intake is disabled and collects no information."><section class="section"><PageIntro title="Submit an Incident" eyebrow="NO COLLECTION" copy="This future workflow is disabled until consent, privacy, access, retention, withdrawal and deletion controls are approved."/><DisabledForm kind="incident"/><p class="disclaimer-box">{disclaimer}</p></section></Base>

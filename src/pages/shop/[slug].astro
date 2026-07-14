@@ -1,0 +1,5 @@
+---
+import Base from '../../layouts/BaseLayout.astro'; import PageIntro from '../../components/PageIntro.astro'; import Fourthwall from '../../components/FourthwallHandoff.astro'; import { products } from '../../data/site';
+export function getStaticPaths(){return products.map(product=>({params:{slug:product.slug},props:{product}}));} const {product}=Astro.props;
+---
+<Base title={product.name} description={product.summary}><section class="section"><PageIntro title={product.name} eyebrow="Not for sale — provisional" copy={product.summary}/><img src={product.image} width="800" height="560" alt="Provisional original Tavern merchandise concept artwork"><div class="prose"><h2>Product facts</h2><p>Price, variants, materials, sizing, care, availability and production timing are not approved. No order can be placed here.</p><p><a href="/shipping/">Shipping status</a> · <a href="/returns/">Returns status</a></p></div><Fourthwall/></section></Base>

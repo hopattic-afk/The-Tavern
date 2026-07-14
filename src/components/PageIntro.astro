@@ -1,0 +1,5 @@
+---
+interface Props { title:string; eyebrow?:string; copy:string; }
+const { title, eyebrow='The Tavern', copy }=Astro.props;
+---
+<header><p class="eyebrow">{eyebrow}</p><h1>{title}</h1><p class="lede">{copy}</p></header>

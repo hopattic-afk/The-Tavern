@@ -1,0 +1,6 @@
+---
+interface Props { kind:'incident'|'email'|'contact'; }
+const { kind }=Astro.props;
+const info = {incident:{title:'Incident intake is closed',copy:'NO COLLECTION: do not enter or send alliance information. Consent, retention, deletion and access controls must be approved in Issue #8 first.'},email:{title:'Email signup is not active',copy:'No email provider or consent workflow is connected.'},contact:{title:'Contact form is not active',copy:'No contact provider or retention workflow is connected.'}}[kind];
+---
+<section class="disabled-form" aria-labelledby={`${kind}-title`}><h2 id={`${kind}-title`}>{info.title}</h2><p>{info.copy}</p><fieldset disabled><legend>Preview of future fields</legend><label>Name <input name="name" autocomplete="off"></label><label>{kind==='email'?'Email':'Message'} {kind==='email'?<input type="email" name="email" autocomplete="off">:<textarea name="message"></textarea>}</label><button type="button">Unavailable</button></fieldset></section>

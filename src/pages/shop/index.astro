@@ -1,0 +1,4 @@
+---
+import Base from '../../layouts/BaseLayout.astro'; import PageIntro from '../../components/PageIntro.astro'; import Cards from '../../components/Cards.astro'; import Fourthwall from '../../components/FourthwallHandoff.astro'; import { products } from '../../data/site';
+---
+<Base title="Shop" description="Browse provisional original Tavern merchandise concepts. Nothing is currently for sale."><section class="section"><PageIntro title="The provisional shop" eyebrow="Nothing is for sale" copy="Original merchandise concepts awaiting rights, product, pricing, sample and founder approval."/><Cards label="Merchandise concepts" items={products.map(p=>({href:`/shop/${p.slug}/`,title:p.name,summary:p.summary,image:p.image,badge:'Not for sale — provisional'}))}/><Fourthwall/></section></Base>

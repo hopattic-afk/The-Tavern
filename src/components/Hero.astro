@@ -1,0 +1,5 @@
+---
+interface Props { eyebrow?: string; title: string; copy: string; }
+const { eyebrow='Bad plans. Strong rallies.', title, copy } = Astro.props;
+---
+<section class="hero"><div><p class="eyebrow">{eyebrow}</p><h1>{title}</h1><p class="lede">{copy}</p><div class="actions"><slot /></div></div><img src="/characters/mascot-candidate.svg" width="520" height="520" alt="Provisional illustration of Bramble Bung, an armored raccoon innkeeper"></section>

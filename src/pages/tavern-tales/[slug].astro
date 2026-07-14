@@ -1,0 +1,4 @@
+---
+import Base from '../../layouts/BaseLayout.astro'; import PageIntro from '../../components/PageIntro.astro'; import Status from '../../components/StatusNotice.astro'; import {tales} from '../../data/site'; export function getStaticPaths(){return tales.map(tale=>({params:{slug:tale.slug},props:{tale}}));} const {tale}=Astro.props;
+---
+<Base title={tale.title} description={tale.summary}><article class="section"><PageIntro title={tale.title} eyebrow="Tavern Tale concept" copy={tale.summary}/><Status title="Video not produced"><p>No player, audio, tracking or third-party embed is present.</p></Status><div class="prose"><h2>Accessible transcript placeholder</h2><p><strong>{tale.character}:</strong> This concept awaits an approved script, captions, transcript, rights review and publication decision.</p></div></article></Base>

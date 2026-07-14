@@ -38,3 +38,5 @@ Issue #2/#3 checkpoint: Issue #2 may provisionally approve Tavern-only palette, 
 Issue #3 handoff gate: the provisional seven-character universe and Bramble mascot recommendation do not unblock #6/#7/#9 production until name/trademark screening, similarity/privacy review, Sentinel review, founder roster/mascot approval, and #2 mascot-lockup review are recorded.
 
 Issue #4 handoff gate: design evidence uses provisional #2/#3 placeholders and keeps incident collection, analytics, forms, providers and Fourthwall integration inactive. Issue #5 implementation is blocked until Sentinel and founder approve the design architecture; that approval does not authorize deployment or publication.
+
+Issue #5 implementation checkpoint: a reversible local Astro build may use clearly labeled provisional #2/#3/#4 inputs. Completion still requires an approved private Netlify preview and verified Fourthwall handoff. Netlify linking/deployment, providers, credentials, collection, analytics, commerce activation and publication remain founder gates.

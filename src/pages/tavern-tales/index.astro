@@ -1,0 +1,4 @@
+---
+import Base from '../../layouts/BaseLayout.astro'; import PageIntro from '../../components/PageIntro.astro'; import Cards from '../../components/Cards.astro'; import {tales} from '../../data/site';
+---
+<Base title="Tavern Tales" description="Browse provisional original trash-panda comedy concepts."><section class="section"><PageIntro title="Tavern Tales" copy="Short comedy concepts from a war council that remains confused."/><Cards label="Tavern Tales" items={tales.map(t=>({href:`/tavern-tales/${t.slug}/`,title:t.title,summary:t.summary,badge:'Concept only'}))}/></section></Base>

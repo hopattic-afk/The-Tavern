@@ -14,6 +14,7 @@ Use statuses `Proposed`, `Accepted`, or `Superseded`. Acceptance means the named
 | D-008 | 2026-07-11 | Accepted | Issue #2 defines the non-character identity interface; Issue #3 owns roster and mascot. | Prevent overlapping ownership and premature mascot lock. | Revisit only through coordinated #2/#3 decision. |
 | D-009 | 2026-07-11 | Proposed | Use the seven-character provisional roster and recommend Bramble Bung as mascot candidate. | Covers distinct comedy functions; Bramble has strongest brand breadth and 91/100 provisional score. | Name/trademark and similarity review, Sentinel review, founder roster/mascot approval; lockup returns to #2. |
 | D-010 | 2026-07-11 | Proposed | Adopt the Issue #4 sitemap, mobile-first component architecture, performance budgets, and inactive privacy-safe analytics taxonomy. | Provides implementation-ready evidence without integrations or irreversible identity assumptions. | Sentinel review and founder design-architecture approval before #5 implementation. |
+| D-011 | 2026-07-13 | Proposed | Implement Issue #5 as a static Astro site with zero-hydration content pages and a fail-closed outbound Fourthwall URL. | Keeps JavaScript and payment risk low while approvals remain pending. | Sentinel review; founder approves design, provider configuration and any preview deployment. |
 
 ## Pending decisions
 

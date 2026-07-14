@@ -1,0 +1,4 @@
+---
+import Base from '../../layouts/BaseLayout.astro'; import PageIntro from '../../components/PageIntro.astro'; import Cards from '../../components/Cards.astro'; import data from '../../../content/characters/characters.json';
+---
+<Base title="Meet the Trash Pandas" description="Meet the provisional original Tavern character roster."><section class="section"><PageIntro title="Meet the Trash Pandas" eyebrow="Founder approval pending" copy="Seven distinct silhouettes. One deeply questionable establishment. Every name, design and mascot choice remains provisional."/><Cards label="Provisional character roster" items={data.characters.map(c=>({href:`/trash-pandas/${c.id}/`,title:c.name,summary:`${c.role}: ${c.personality}.`,image:`/characters/${c.id}.svg`,badge:'Provisional'}))}/></section></Base>

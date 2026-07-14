@@ -6,7 +6,7 @@ The Tavern is an unofficial ALE alliance community brand: medieval trash pandas 
 
 ## Project status
 
-Foundation only. Issue #1 defines the operating constraints for roadmap Issues #2-#10. No public site, store, form, or social account is launched from this repository without explicit founder approval.
+Issue #5 provisional local website build. Brand, roster, design, legal and commerce decisions remain pending. No public site, store, form, analytics or social account is launched from this repository without explicit founder approval.
 
 ## Repository map
 
@@ -23,5 +23,7 @@ Foundation only. Issue #1 defines the operating constraints for roadmap Issues #
 3. Keep changes on a dedicated branch and use private previews only when approved.
 4. Run `pwsh -File scripts/validate-foundation.ps1`.
 5. Record durable decisions in `docs/DECISION_LOG.md`.
+
+Website setup, content, private-preview gates and rollback are documented in `docs/SITE_OPERATIONS.md`.
 
 Never commit secrets, private messages, coordinates, member identities, protected game assets, or unapproved submissions.

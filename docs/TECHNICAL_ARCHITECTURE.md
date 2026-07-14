@@ -2,7 +2,7 @@
 
 ## Decision
 
-Use Astro as the default frontend candidate for Issue #5: the expected site is content-heavy and mostly static, so Astro supports minimal client JavaScript, component reuse, responsive images, and Netlify previews. Validate the choice against Issue #4 designs and Fourthwall's current supported integration before scaffolding; record any change in the decision log.
+The Issue #5 provisional implementation uses Astro with static output and zero hydration for content pages. This remains a proposed product decision until design/Sentinel/founder acceptance. The commerce boundary is a fail-closed HTTPS outbound link to an approved `fourthwall.com` store; no custom cart, checkout, payment fields or payment storage exists.
 
 ## Boundaries
 

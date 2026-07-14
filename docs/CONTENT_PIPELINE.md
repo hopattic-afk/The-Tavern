@@ -4,6 +4,8 @@
 
 `consented incident -> privacy review -> anonymized story brief -> script -> IP/privacy review -> storyboard -> production -> caption/accessibility check -> founder approval -> platform publication -> archive/withdrawal handling`
 
+Issue #8 locally defines this process but remains `NO COLLECTION`. Writers may receive only fields allowed by `incident-system/schemas/writer-brief.schema.json`; the raw record, contact reference, consent record and identity fields are forbidden.
+
 Raw submissions are not repository content. Writers receive only approved, minimized briefs. A withdrawal request stops unpublished use and triggers deletion according to the approved retention policy.
 
 ## Status vocabulary

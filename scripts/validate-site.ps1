@@ -11,12 +11,14 @@ $disclaimer = 'An unofficial player-community project. The Tavern and ALE are no
 if ($source -notlike "*$disclaimer*") { throw 'Exact disclaimer missing from site source.' }
 if ($source -match '<form\b|type=["'']submit|<input[^>]+(?:card|payment|cc-)') { throw 'Submit-capable or payment form detected.' }
 if ($source -match 'Kingshot[^\r\n]*(?:logo|screenshot|asset)') { throw 'Potential protected-asset reference detected.' }
+if ($source -notmatch 'srcset=') { throw 'Responsive image sources are missing.' }
+if ($source -match '/images/(?:steve-hero|merch-direction)-v1\.png') { throw 'Unoptimized website image reference detected.' }
 $netlify = Get-Content -LiteralPath (Join-Path $root 'netlify.toml') -Raw
 foreach ($header in @('Content-Security-Policy','X-Robots-Tag','Permissions-Policy')) { if ($netlify -notlike "*$header*") { throw "Missing header: $header" } }
 if ((Get-Content -LiteralPath (Join-Path $root '.env.example') -Raw) -match '=\S+') { throw '.env.example contains a value.' }
 $dist = Join-Path $root 'dist'
 if (Test-Path -LiteralPath $dist) {
-  $built = @('index.html','shop/index.html','tavern-tales/index.html','trash-pandas/index.html','about/index.html','about/ale/index.html','submit/index.html','faq/index.html','contact/index.html','shipping/index.html','returns/index.html','privacy/index.html','terms/index.html','404.html')
+  $built = @('index.html','shop/index.html','tavern-tales/index.html','trash-pandas/index.html','trash-pandas/bramble-bung/index.html','about/index.html','about/ale/index.html','submit/index.html','faq/index.html','contact/index.html','shipping/index.html','returns/index.html','privacy/index.html','terms/index.html','404.html')
   $missingBuilt = $built | Where-Object { -not (Test-Path -LiteralPath (Join-Path $dist $_)) }
   if ($missingBuilt) { throw "Missing built routes: $($missingBuilt -join ', ')" }
   $htmlFiles = Get-ChildItem -LiteralPath $dist -Filter '*.html' -Recurse
@@ -27,5 +29,7 @@ if (Test-Path -LiteralPath $dist) {
   }
   $lazyCount = ($htmlFiles | Select-String -Pattern 'loading="lazy"' -ErrorAction SilentlyContinue).Count
   if ($lazyCount -lt 1) { throw 'No lazy-loaded below-fold image found in build.' }
+  $otherCharacterRoutes = Get-ChildItem -LiteralPath (Join-Path $dist 'trash-pandas') -Directory | Where-Object Name -ne 'bramble-bung'
+  if ($otherCharacterRoutes) { throw "Deferred character routes were built: $($otherCharacterRoutes.Name -join ', ')" }
 }
 Write-Host "Site validation passed: $($required.Count) required files, built routes/metadata/zero hydration, fail-closed forms/commerce, disclaimer, headers, and env safety."

@@ -1,6 +1,6 @@
 # Brand bible — provisional system
 
-Status: **provisional pending founder identity-gate approval**. Issue #2 owns this system. Issue #3 owns the character roster and mascot; no character or ALE badge is approved here.
+Status: **non-character identity remains provisional pending founder identity-gate approval**. Issue #2 owns this system. Issue #3 owns the character roster and mascot. Steve is the founder-selected private mascot direction; his final artwork/name clearance, all other character likenesses, and the ALE badge remain blocked.
 
 ## Position and audience
 
@@ -66,6 +66,13 @@ Both families are recommended, not vendored. Their canonical source is Google Fo
 
 ## Texture and imagery
 
+### Founder-approved imagery direction
+
+- Use raccoons/trash pandas only for character and lifestyle imagery. Do not use human figures, silhouettes, faces, hands, models, or human-led photography.
+- Keep characters feral, scrappy, wary, mischievous, scavenged, and weathered. High-end execution describes craft quality, not regal subject matter.
+- Avoid crowns, thrones, armor, capes, polished noble clothing, heraldic pageantry, royal poses, or fantasy-warrior shortcuts.
+- Steve is the approved mascot direction. Additional character likenesses remain open until founder-supplied imagery passes rights, privacy, originality, and protected-reference review.
+
 Texture is optional and subordinate: maximum 8% opacity behind text, no texture in clear space, and never encode meaning with texture alone. Use original wood grain, scratched iron, parchment, soot, dented tankards, paw-print abstractions, and damaged heraldry only after rights clearance. Do not imitate game art, interfaces, logos, characters, screenshots, marketing layouts, or generic esports neon.
 
 ## Concrete usage
@@ -93,6 +100,11 @@ Do not:
 - Keep the legal disclaimer in mandatory locations, provide reduced-motion alternatives, and never load blocked fonts/assets in production.
 
 ## Merchandise usage
+
+- Apparel uses a restrained front treatment: micro mark, tonal embroidery, or quiet left-chest Tavern identifier.
+- The back may carry one considered Tavern-related illustration or composition. It must still feel wearable at normal social distance.
+- Avoid oversized front logos, billboard slogans, sponsor layouts, event graphics, calls to action, URLs, QR codes, or promotional clutter.
+- Favor premium heavyweight blanks, durable inks or stitching, limited colors, and product-detail evidence. A private concept is not vendor or sample approval.
 
 - Start from one-color or two-color Tavern-only marks; verify vendor minimum line width, print area, color profile, and embroidery stitch limits for every product.
 - Use the simplified mark for small embroidery and the wordmark only where its clear space and minimum size survive production.

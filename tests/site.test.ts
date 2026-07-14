@@ -9,4 +9,15 @@ describe('public-safe fixtures',()=>{
     const css=readFileSync(new URL('../src/styles/global.css',import.meta.url),'utf8');
     expect(css).toMatch(/img\s*\{[^}]*max-width:\s*100%[^}]*height:\s*auto[^}]*\}/);
   });
+  it('serves responsive website artwork',()=>{
+    const home=readFileSync(new URL('../src/pages/index.astro',import.meta.url),'utf8');
+    expect(home).toContain('srcset=');
+    expect(home).not.toMatch(/(?:steve-hero|merch-direction)-v1\.png/);
+  });
+  it('builds only Steve from the archived character evidence',()=>{
+    const route=readFileSync(new URL('../src/pages/trash-pandas/[slug].astro',import.meta.url),'utf8');
+    expect(route).toContain("candidate.id==='bramble-bung'");
+    expect(route).not.toContain('data.characters.map');
+    expect(route).not.toContain('/characters/${character.id}.svg');
+  });
 });

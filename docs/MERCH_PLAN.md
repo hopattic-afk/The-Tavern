@@ -10,6 +10,14 @@ Issue #6 develops ten concepts, refines five, and launches three across no more 
 
 Each selected design needs original source files, rights evidence, print specifications, mockups, light/dark behavior, product copy, sizing/care details, base cost, recommended price, estimated margin, production/shipping expectations, and sample review evidence.
 
+### Founder-approved apparel direction
+
+- Premium and wearable, not promotional.
+- Front: one restrained Tavern identifier, such as a small left-chest mark or tonal embroidery.
+- Back: one considered Tavern-related illustration or composition.
+- Avoid oversized front logos, sponsor/event layouts, CTA copy, URLs, QR codes, and billboard-style slogans.
+- Use heavyweight blanks, quiet colors, and durable decoration methods. Final placement, vendor, price, sample spend, physical QA, and sale remain approval-gated.
+
 ### Provisional package
 
 Canonical records are in `merch/drop-01/`. The package contains exactly ten scored concepts, five refinements, and three provisional selections: D01 Crooked Tankard, D02 Bad Plans Pennant, and D03 Structural Tab. Product types are capped at four: premium T-shirt, hoodie, mug, and sticker pack. Hat/beanie work is deferred; D10 is an unselected geometry study only.

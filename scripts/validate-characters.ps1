@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $data = Get-Content -Raw -LiteralPath (Join-Path $root 'content/characters/characters.json') | ConvertFrom-Json
-if ($data.status -ne 'provisional' -or $data.publicCommercialUse -ne 'blocked' -or $data.mascotSelected) { throw 'Provisional/blocked/unselected gates changed.' }
+if ($data.status -ne 'steve-selected-private' -or $data.remainingRosterStatus -ne 'archived-pending-founder-imagery' -or $data.publicCommercialUse -ne 'blocked' -or -not $data.mascotSelected) { throw 'Expected Steve selected privately, the remaining roster archived, and public/commercial use blocked.' }
 if ($data.characters.Count -ne 7) { throw 'Exactly seven characters required.' }
 $required = @('id','name','role','personality','appearance','silhouette','clothing','armor','accent','expressions','speech','strength','weakness','prop','runningJoke','catchphrase','relationships','poses','skits','merch','modelSheet','mascot')
 $unique = @('id','name','role','silhouette','prop','catchphrase')
@@ -37,9 +37,9 @@ foreach ($c in $data.characters) {
   if ($rights -notmatch [regex]::Escape($c.id)) { throw "$($c.id) missing rights-row coverage." }
 }
 $top = $data.characters | Sort-Object { $_.mascot.total } -Descending | Select-Object -First 1
-if ($top.id -ne $data.mascotRecommendation.id -or $top.mascot.total -ne $data.mascotRecommendation.score -or $data.mascotRecommendation.selected) { throw 'Mascot recommendation/selection state invalid.' }
+if ($top.id -ne $data.mascotRecommendation.id -or $top.mascot.total -ne $data.mascotRecommendation.score -or -not $data.mascotRecommendation.selected -or $data.mascotRecommendation.displayName -ne 'Steve') { throw 'Mascot recommendation/selection state invalid.' }
 if (($data.characters.mascot.total | Sort-Object -Unique).Count -ne 7) { throw 'Mascot totals must be distinct for deterministic ranking.' }
 $bible = Get-Content -Raw -LiteralPath (Join-Path $root 'docs/CHARACTER_BIBLE.md')
 foreach ($c in $data.characters) { if ($bible -notmatch [regex]::Escape($c.name)) { throw "Bible missing $($c.name)" } }
-if ($bible -notmatch 'BLOCKED for public/commercial use') { throw 'Blocking gate missing.' }
-Write-Host 'Character validation passed: required fields, uniqueness, 7 scorecards, arithmetic, concepts, rights, and production sheets.'
+if ($bible -notmatch 'public/commercial use remains BLOCKED') { throw 'Blocking gate missing.' }
+Write-Host 'Character validation passed: Steve selected privately, remaining records archived, gates retained, scorecards and production evidence valid.'

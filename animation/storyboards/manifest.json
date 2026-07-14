@@ -1,0 +1,7 @@
+{"status":"provisional-internal-review","storyboards":[
+  {"id":"S01","file":"animation/storyboards/STB-S01-v001.svg","shots":5,"duration":30,"silentNote":"Scroll growth, Pip reaction and final caption carry every beat."},
+  {"id":"S02","file":"animation/storyboards/STB-S02-v001.svg","shots":5,"duration":28,"silentNote":"Sword point, moved chair, formation and treaty are visible."},
+  {"id":"S03","file":"animation/storyboards/STB-S03-v001.svg","shots":5,"duration":32,"silentNote":"Single potato and multiplying ledger divisions explain conflict."},
+  {"id":"S04","file":"animation/storyboards/STB-S04-v001.svg","shots":5,"duration":34,"silentNote":"Map rotations and north question remain caption legible."},
+  {"id":"S07","file":"animation/storyboards/STB-S07-v001.svg","shots":5,"duration":24,"silentNote":"Sleeping pose, empty room and smoking chair establish aftermath."}
+]}

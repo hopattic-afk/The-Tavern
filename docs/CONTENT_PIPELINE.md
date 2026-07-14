@@ -14,6 +14,8 @@ Use only these canonical statuses for public-safe story records: `draft`, `priva
 
 Issue #7 uses reusable 2D cutout characters, backgrounds, and props for 9:16, caption-readable, sound-independent videos, generally 15-45 seconds. Scripts contain hook, setup, escalation, conflict, and punchline. Rights for voices, music, sounds, artwork, and fonts must be recorded.
 
+The provisional local package in `animation/` contains 30 synthetic premises, 10 timed scripts, 5 storyboards, and three silent SVG render candidates (S01, S02, S07). Its maximum status is `render-candidate`: character/brand approvals, rights review, Issue #8 safeguards, manual muted/mobile QA, Sentinel, founder approval, platform verification and publication remain blocked. Audio is intentionally absent and recorded as such.
+
 ## Repository content
 
 Only founder-approved, public-safe copy and metadata belongs in `content/`; see `content/README.md` for the minimum schema and naming rules. Do not include member identities, private quotes, coordinates, strategy, account details, or consent records.

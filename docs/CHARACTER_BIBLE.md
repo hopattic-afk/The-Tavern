@@ -1,29 +1,31 @@
 # Character bible — provisional universe
 
-Status: **BLOCKED for public/commercial use** pending founder roster/name/mascot approval, name/trademark screening, independent similarity review, rights clearance, and Sentinel review. These are original fictional Tavern characters, not real ALE members. Issue #3 owns character art; Issue #2 retains the base logo and any future mascot lockup handback.
+Status: **Steve is the founder-selected private mascot direction; public/commercial use remains BLOCKED** pending name/trademark screening, independent similarity review, rights clearance, Sentinel review, and the downstream launch gates. The remaining roster is not approved and awaits founder-supplied imagery. These are original fictional Tavern characters, not real ALE members.
 
 ## System interface
 
-- Seven raccoons use clean silhouettes, two-value facial masks, limited interior detail, and one accent each against Soot/Parchment surfaces.
+- Character imagery is raccoon/trash-panda only. Never use humans, human silhouettes, faces, hands, models, or human-led lifestyle imagery.
+- Favor real raccoon anatomy and behavior: crouched, wary, scrappy, mischievous, scavenged, weathered, and slightly feral.
+- Practical battered props and workwear are allowed. Avoid crowns, thrones, armor, capes, heraldic pageantry, noble coats, polished uniforms, or royal portrait poses.
 - Avatar art survives a circular 760/1080 safe area; animation uses separate head, muzzle, torso, upper/lower arms, hands, prop, and optional mouth/eyebrow layers.
 - Atkinson/Spectral remain provisional/blocked fonts. The Crooked Tankard mark remains unchanged and independent.
 - Standard poses: neutral turnaround, working/prop pose, reaction pose. Standard expressions: neutral, confident, alarmed, delighted, exhausted, suspicious.
 - Props may swap only within a character's approved family. Never add protected game UI, logos, costumes, screenshots, or recognizable member details.
 
-## Primary mascot recommendation
+## Selected mascot direction
 
-**Bramble Bung, the Innkeeper** is recommended, not selected. Weighted score: silhouette 22/25, role breadth 20/20, animation 13/15, merchandise 14/15, expression 9/10, originality risk 8/10, cross-cultural clarity 5/5 = **91/100**. Bramble welcomes visitors, anchors every storyline, avoids combat-first positioning, and complements the non-character tankard mark. Founder approval and equal finalist review remain required.
+**Steve, the Innkeeper** is selected as the private mascot direction. Steve is a wary, weathered raccoon in battered practical work gear with a crooked metal tankard. He is more feral than regal: natural posture, intelligent suspicion, scavenged materials, no armor, no throne, and no noble styling. The repository keeps the legacy `bramble-bung` route and asset identifiers temporarily to avoid link churn; they are implementation aliases, not the approved display name or final artwork.
 
-All seven were scored on the same weights (25/20/15/15/10/10/5): Bramble 91, Pip 84, Vellum 80, Muddle 79, Tansy 78, Rook 76, Drowse 73. Component scores and arithmetic are canonical in `content/characters/characters.json`; validator recomputes every total. Bramble wins breadth and non-combat welcome utility; Pip is the strongest audience-surrogate alternative; the remaining cast have narrower role breadth. This is a recommendation only, not selection.
+The earlier seven-character scorecard remains archived decision evidence only. It does not approve the other six likenesses. Do not produce new public-facing roster art until the founder supplies imagery and each source passes rights, privacy, originality, and protected-reference review.
 
 ## Cast records
 
-### Bramble Bung — Innkeeper — Ale Gold
+### Steve — Innkeeper — Ale Gold
 
 - Personality/role: exhausted, hospitable anchor who converts disasters into house policy. Strength: calm triage. Weakness: accepts responsibility for everyone. Speech: short service-industry certainty.
 - Appearance/silhouette: broad pear torso, rolled sleeves, crooked apron, one low shoulder; no armor. Expressions: dry neutral, forced welcome, panic, relief, suspicion, proud exhaustion.
 - Prop/joke/catchphrase: dented ledger-tankard; continually starts a damage tab. “Put it on the structural tab.”
-- Relationships: restrains Rook, audits Tansy, translates Muddle, relies on Vellum, protects Pip, leaves notes for Drowse.
+- Relationships: all supporting-character relationships remain provisional until founder-supplied imagery establishes the active roster.
 - Poses/consistency: ledger at left hip; apron patch always right; rounded ears/low center of gravity. Rig: simple sleeves/apron flap, 10 mouth shapes max.
 - Concepts — skits: Rook invoices a siege; Muddle's map becomes a menu; Drowse clocks in after closing. Merch: one-color innkeeper bust; structural-tab mug; apron-patch sticker.
 - Suitability: strongest mascot/avatar; excellent mug/sticker/shirt; embroidery requires simplified ledger lines.
@@ -94,4 +96,5 @@ All seven were scored on the same weights (25/20/15/15/10/10/5): Bramble 91, Pip
 - SVGs are deterministic original geometric studies, not final art. Rights rows remain blocked until independent review.
 - No character is based on a member; any future name, likeness, biography, quote, or incident link requires specific recorded permission.
 - Fictional dialogue is adaptation, never represented as a real quotation. No private messages, account details, strategy, or coordinates.
-- **BLOCKED:** final roster, mascot selection, mascot mark, #2 lockup, rigs, merchandise production, profiles, publication, or commercial use until founder and downstream gates are recorded.
+- **ACCEPTED FOR PRIVATE DIRECTION:** Steve's name, raccoon-only imagery rule, and feral/non-regal treatment.
+- **BLOCKED:** final Steve artwork/mark, name clearance, remaining roster, rigs, merchandise production, profiles, publication, or commercial use until rights, Sentinel, founder, and downstream gates are recorded.

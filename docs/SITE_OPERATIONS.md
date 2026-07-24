@@ -1,6 +1,6 @@
 # Site operations — Issue #5 provisional build
 
-Status: local and deploy-ready only. The site, store, providers, forms and analytics are not active. Identity, roster, design architecture, legal text and commerce remain provisional.
+Status: local and deploy-ready only. The site, store, providers, forms and analytics are not active. Steve is the founder-selected private mascot direction; his public/commercial rights and the remaining roster, legal text and commerce remain unresolved.
 
 ## Local setup
 
@@ -15,7 +15,7 @@ Never place credentials, tokens, private alliance information, submissions, cons
 ## Content updates
 
 - Products and tales: `src/data/site.ts`; facts remain provisional until supplied by an approved source.
-- Characters: `content/characters/characters.json`; retain provisional labels until founder and rights approval.
+- Characters: `content/characters/characters.json`; expose only Steve on the website. Treat the other six records as archived decision evidence until founder-supplied imagery is reviewed. Steve still requires name, rights, similarity, and public/commercial clearance.
 - Shared disclaimer and shell: `src/data/site.ts` and `src/layouts/BaseLayout.astro`.
 - Brand tokens and original assets: `public/brand/` and `public/characters/`; update the rights register before public/commercial use.
 

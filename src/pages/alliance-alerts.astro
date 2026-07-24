@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import StatusNotice from '../components/StatusNotice.astro';
+import { disclaimer } from '../data/site';
+import { resolveAllianceAlertsEmbedUrl } from '../lib/alliance-alerts.mjs';
+
+const alertsEmbed = resolveAllianceAlertsEmbedUrl(
+  import.meta.env.PUBLIC_ALLIANCE_ALERTS_EMBED_URL
+);
+---
+<Base
+  title="Alliance Alerts"
+  description="A public-safe view of upcoming ALE alliance event reminders."
+>
+  <section class="section prose">
+    <PageIntro
+      title="Alliance Alerts"
+      eyebrow="Public-safe schedule"
+      copy="Upcoming community event reminders, kept separate from the private alert dashboard."
+    />
+    <p>
+      This view contains only reminders approved for public display. It does not
+      include delivery records, account details, member information, coordinates,
+      private strategy, or administrative controls.
+    </p>
+    {
+      alertsEmbed ? (
+        <div class="alerts-embed-shell">
+          <iframe
+            class="alerts-embed"
+            data-alliance-alerts-embed
+            src={alertsEmbed.href}
+            title="Upcoming Alliance Alerts"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            sandbox="allow-scripts"
+          />
+        </div>
+      ) : (
+        <StatusNotice title="Alliance alerts are unavailable">
+          <p>
+            The public schedule has not been connected for this build. No private
+            alert information is shown.
+          </p>
+        </StatusNotice>
+      )
+    }
+    <p class="disclaimer-box">{disclaimer}</p>
+  </section>
+</Base>

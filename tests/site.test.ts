@@ -1,5 +1,6 @@
 import { describe,expect,it } from 'vitest';
 import { disclaimer,products,tales } from '../src/data/site';
+import { renderNetlifyHeaders,resolveAllianceAlertsEmbedUrl } from '../src/lib/alliance-alerts.mjs';
 import { existsSync, readFileSync } from 'node:fs';
 describe('public-safe fixtures',()=>{
   it('keeps exact disclaimer',()=>expect(disclaimer).toBe('An unofficial player-community project. The Tavern and ALE are not affiliated with or endorsed by Kingshot or CenturyGames.'));
@@ -24,6 +25,60 @@ describe('public-safe fixtures',()=>{
     expect(route).toContain("candidate.id==='bramble-bung'");
     expect(route).not.toContain('data.characters.map');
     expect(route).not.toContain('/characters/${character.id}.svg');
+  });
+  it('accepts only the exact HTTPS public alerts embed surface',()=>{
+    expect(resolveAllianceAlertsEmbedUrl('HTTPS://ALERTS.EXAMPLE.COM/embed')).toEqual({
+      href:'https://alerts.example.com/embed',
+      origin:'https://alerts.example.com'
+    });
+    expect(resolveAllianceAlertsEmbedUrl('https://alerts.example.com:443/embed')).toEqual({
+      href:'https://alerts.example.com/embed',
+      origin:'https://alerts.example.com'
+    });
+    for (const value of [
+      '',
+      'http://alerts.example.com/embed',
+      'https://alerts.example.com/',
+      'https://alerts-admin.example.com/embed',
+      'https://status.example.com/embed',
+      'https://other.alerts.example.com/embed',
+      'https://127.0.0.1/embed',
+      'https://localhost/embed',
+      'https://alerts/embed',
+      'https://alerts.localhost/embed',
+      'https://alerts.127.0.0.1/embed',
+      'https://alerts.example.com/api/admin/dashboard',
+      'https://alerts.example.com/embed?view=admin',
+      'https://alerts.example.com/embed#history',
+      'https://alerts.example.com:8443/embed',
+      'https://user:secret@alerts.example.com/embed'
+    ]) expect(resolveAllianceAlertsEmbedUrl(value)).toBeNull();
+  });
+  it('generates fail-closed headers without weakening existing controls',()=>{
+    const closed=renderNetlifyHeaders('');
+    expect(closed).toContain("frame-src 'none'");
+    const configured=renderNetlifyHeaders('https://alerts.example.com/embed');
+    expect(configured).toContain('frame-src https://alerts.example.com');
+    expect(configured).not.toMatch(/frame-src https:(?:;|\s)/);
+    expect(configured).not.toMatch(/frame-src \*(?:;|\s)/);
+    for (const header of [
+      'X-Robots-Tag: noindex, nofollow, noarchive',
+      'X-Frame-Options: DENY',
+      'Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()',
+      "frame-ancestors 'none'",
+      "form-action 'none'"
+    ]) expect(configured).toContain(header);
+  });
+  it('keeps Alliance Alerts public-safe and pre-launch only',()=>{
+    const route=readFileSync(new URL('../src/pages/alliance-alerts.astro',import.meta.url),'utf8');
+    const layout=readFileSync(new URL('../src/layouts/BaseLayout.astro',import.meta.url),'utf8');
+    expect(layout).toContain('href="/alliance-alerts/"');
+    expect(layout).toContain('noindex,nofollow,noarchive');
+    expect(layout).toContain('Pre-launch site · no sales or submissions');
+    expect(route).toContain('data-alliance-alerts-embed');
+    expect(route).toContain('sandbox="allow-scripts"');
+    expect(route).toContain('referrerpolicy="no-referrer"');
+    expect(route).not.toMatch(/\/api\/admin|last_error|webhook|discord|occurrences/i);
   });
   it('pins production canonical metadata to the custom domain',()=>{
     const packageJson=JSON.parse(readFileSync(new URL('../package.json',import.meta.url),'utf8'));

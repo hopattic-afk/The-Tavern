@@ -49,6 +49,8 @@ footer{border-top:1px solid #ffffff24;padding:2rem max(1rem,calc((100% - 74rem)/
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .prose{max-width:72ch}
 .disclaimer-box{font-weight:700;border:2px solid var(--tavern-ale-gold-500);padding:1rem}
+.alerts-embed-shell{margin-block:2rem;overflow:hidden;border:1px solid #ffffff24;border-radius:.25rem;background:var(--tavern-surface-dark);box-shadow:0 1.5rem 4rem #0007}
+.alerts-embed{display:block;width:100%;min-height:32rem;border:0;background:var(--tavern-surface-dark)}
 @media(max-width:760px){
   .site-header{align-items:flex-start;flex-direction:column}
   .hero{min-height:44rem}

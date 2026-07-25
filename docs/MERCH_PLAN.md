@@ -32,6 +32,8 @@ The production manifest targets 300 DPI for future raster exports but blocks exp
 
 `pricing-scenarios.csv` calculates unit margin as sale price minus base/production cost, verified per-order fees, seller-funded discount, and shipping subsidy. Margin percentage is unit margin divided by sale price. Every current value is `TBD`; a row becomes verified only from the exact approved product/variant/settings with currency, region, evidence reference, and access date. Taxes and customer-paid shipping may be excluded only when dated vendor evidence confirms pass-through treatment. Scenario arithmetic is not a price, promise, or expected profit.
 
+`PROVIDER_EVIDENCE_TEMPLATE.md` is the decision-ready Fourthwall record for exact product/variant specifications, dated costs/fees, proposed pricing, margin arithmetic, fulfillment facts, checkout evidence and the sample-spend decision. It must be completed from current provider evidence; do not invent SKUs, values or production promises. `SAMPLE_QA.md` remains the physical acceptance gate after founder-approved spend.
+
 ## Gates
 
 Founder approval is required before connecting accounts, purchasing samples, changing products/prices, or opening sales. Samples must be received and approved for color, print/embroidery quality, sizing, and packaging before public sale. Do not use protected game assets.

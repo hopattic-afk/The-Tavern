@@ -10,7 +10,7 @@ The Issue #5 provisional implementation uses Astro with static output and zero h
 - Astro application: public presentation, content rendering, navigation, accessible forms, SEO, and outbound commerce handoff.
 - Repository Markdown/JSON: approved public content at launch; no raw submissions or consent records.
 - Fourthwall: product catalog, variants, cart/checkout, payment, taxes, fulfillment, shipping, and order support.
-- Netlify: preferred private previews and, only after approval, hosting.
+- Netlify: founder-approved host for the noindex pre-launch site at `https://trashtavern.com`; the reachable site is not private access control.
 - Alliance Alerts Worker: existing scheduler and database behind two exact hostname gates: a narrowly public `alerts.<approved-domain>` surface and a hostname-wide Access-protected `alerts-admin.<approved-domain>` application.
 - Submission provider: undecided until data/privacy gate; must support consent evidence, restricted access, withdrawal, retention, and deletion.
 
@@ -36,7 +36,7 @@ Environment variable names live in `.env.example`; values live only in approved 
 
 ## Delivery
 
-Branch -> local checks -> review -> approved private preview -> acceptance evidence -> founder launch decision. Production deployment, domain/DNS, analytics activation, provider purchases, public alert-feed activation, the hostname-wide admin Access application, and credential changes are approval gates. Rollback is the last verified deploy plus disabling affected forms/links or removing the alerts embed variable and rebuilding to restore `frame-src 'none'`. Never use an Access Bypass policy as a rollback or availability measure.
+Branch -> local checks -> draft review -> noindex custom-domain pre-launch deploy after approval -> hosted acceptance evidence -> founder launch decision. The current domain/host choice is accepted; material deployments, indexing changes, analytics activation, provider purchases, credential changes, commerce, collection, public alert-feed activation, and the hostname-wide admin Access application remain approval gates. Rollback is the last verified deploy plus disabling affected forms/links or removing the alerts embed variable and rebuilding to restore `frame-src 'none'`. Never use an Access Bypass policy as a rollback or availability measure.
 
 ## Open decisions
 

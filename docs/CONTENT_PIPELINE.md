@@ -22,6 +22,16 @@ The provisional local package in `animation/` contains 30 synthetic premises, 10
 
 Only founder-approved, public-safe copy and metadata belongs in `content/`; see `content/README.md` for the minimum schema and naming rules. Do not include member identities, private quotes, coordinates, strategy, account details, or consent records.
 
+## Founder input inbox
+
+`founder-input/` is the local working inbox for founder-supplied photos, story notes and character references. Its raw and review-state folders are Git-ignored and must never enter `content/`, `public/`, `src/`, `design/`, `animation/`, `social/`, `merch/` or `dist/`. Run `npm run content:scan` after changes.
+
+The scanner verifies path isolation, supported extensions, effective Git tracking/ignore behavior, and exact relative-path copies in `public/` or `dist/`. It cannot detect a renamed or manually recreated derivative and does not perform rights, privacy, likeness, protected-reference or content review.
+
+Every input starts as internal inspiration only. The matching template records source, ownership, permissions, privacy/likeness, protected references, intended use and adaptation limits. Inspiration/adaptation permission is distinct from publication or commercial clearance. A derivative needs a new public-safe asset, rights-register row, privacy/similarity review, Sentinel acceptance and founder approval.
+
+Story source types are `synthetic`, `founder-memory` and `member-derived`. Founder-memory material is private by default. Member-derived raw material is blocked from this inbox and content pipeline while Issue #8 remains **NO COLLECTION**.
+
 ## Publication
 
 Issue #9 prepares content but does not publish it. Every item completes IP/privacy review and founder approval before an external action.

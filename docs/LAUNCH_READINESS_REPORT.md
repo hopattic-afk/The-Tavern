@@ -1,6 +1,6 @@
 # Launch readiness report
 
-As of 2026-07-13. This report evaluates repository evidence only. It does not claim hosted, physical-product, account, provider, legal, platform, or human-review evidence that is not present. Current decision: **NO-GO**.
+As of 2026-07-24. This report evaluates repository evidence plus the observed founder-authorized Netlify custom-domain deployment. It does not claim physical-product, commerce-provider, legal, platform, field-performance or human-rights-review evidence that is not present. Current decision: **NO-GO**.
 
 ## Launch-readiness score
 
@@ -11,17 +11,19 @@ This score measures local package maturity, not permission to launch. The public
 ## Completed items
 
 - Foundation, roadmap, architecture, privacy/IP rules, decision log and hard launch gates exist.
-- Local Astro navigation, legal-page presence, SEO metadata, custom 404, fail-closed Fourthwall handoff, and test/validation automation exist.
+- Astro navigation, legal-page presence, canonical SEO/OG metadata, custom 404, fail-closed Fourthwall handoff, and test/validation automation exist.
+- `https://trashtavern.com` is reachable on Netlify with HTTPS, apex canonical intent, `www` redirect, noindex headers and commerce/forms/analytics disabled. It is a public pre-launch review surface, not private access control or launch approval.
+- A local-only founder photo/story/character inbox now separates raw inspiration and review state from Git and public builds.
 - Brand, character, design, merch, animation, incident and social draft packages exist with explicit provisional status.
 - Critical blockers, founder decisions and rollback controls are documented here.
-- No site, store, form, analytics transport, social account, schedule or submission collection was activated by this work.
+- No store, form, analytics transport, social account, schedule or submission collection was activated by this work.
 
 ## Critical blockers
 
 | ID | Blocker | Exit evidence | Owner |
 |---|---|---|---|
 | CB-01 | Brand, roster, mascot, names, similarity and commercial rights are unapproved. | Recorded rights/name/similarity reviews, Sentinel clearance and founder identity decisions. | TBD-rights |
-| CB-02 | No approved private hosted preview or real mobile/desktop/accessibility/performance/link/OG evidence. | Dated private-preview test record at 320/768/1200 with URLs redacted where necessary. | TBD-site |
+| CB-02 | The hosted custom-domain review surface exists, but complete mobile/desktop/accessibility/performance/link/OG evidence is not recorded. | Dated hosted test record at 320/768/1200 covering navigation, keyboard/focus, reduced motion, links, metadata, headers and performance. | TBD-site |
 | CB-03 | Fourthwall products, checkout handoff, shipping/returns facts, prices, margins and production times are unverified. | Provider-sourced configuration and end-to-end handoff evidence. | TBD-commerce |
 | CB-04 | Samples were not purchased, received or physically approved. | Completed `SAMPLE_QA.md`, receipts kept outside Git, and founder release. | TBD-commerce |
 | CB-05 | Three assets are silent SVG render candidates, not final platform-ready videos; manual caption/crop/rights QA is pending. | Three final exports plus dated muted/mobile/a11y/rights review. | TBD-content |
@@ -42,7 +44,7 @@ This score measures local package maturity, not permission to launch. The public
 | ID | Decision | Required before |
 |---|---|---|
 | FD-01 | Approve brand direction, font/right evidence, roster and primary mascot. | Commercial asset use |
-| FD-02 | Approve website architecture, final legal text and private-preview provider/configuration. | Preview deployment |
+| FD-02 | Approve final website architecture and legal text. Netlify/custom-domain pre-launch hosting is accepted under D-021. | Indexing or public-launch release |
 | FD-03 | Approve incident, email and analytics launch scope; if active, approve provider, consent, access, region, retention, deletion and credentials. | Any collection/transport |
 | FD-04 | Approve Fourthwall product setup, sourced costs/prices/margins and sample spend. | Product/sample creation |
 | FD-05 | Approve received samples, final videos/audio policy, social accounts and schedule. | Store/social release |

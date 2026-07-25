@@ -30,7 +30,9 @@ Release evidence still needs all routes, custom 404, keyboard/focus and reduced-
 
 ## Deployment and launch
 
-The custom domain and current pre-launch Netlify deployment are accepted decisions; a new provider, credential/configuration change, launch-indexing change or material deployment still requires the applicable approval. Analytics, store opening, products, prices, legal text, forms, providers and data collection remain separate founder gates. Fourthwall owns products, variants, cart, checkout, payment, taxes, printing, fulfillment, shipping and order handling. Never add custom payment handling.
+Netlify continuous deployment is founder-authorized from the GitHub repository `hopattic-afk/The-Tavern`, using build command `npm run build` and publish directory `dist`. The temporary production branch is `codex/atlas-content-readiness`; its first Git-based production deploy was commit `0b122f0`. Until the production branch is deliberately changed, every push to `codex/atlas-content-readiness` can update the production site and must be treated as a production deployment.
+
+The custom domain and current pre-launch Netlify deployment are accepted decisions; this continuous-deployment authorization does not approve a merge, provider-setting change, new provider, credential/configuration change, launch-indexing change or any other launch gate. Keep noindex and all existing pre-launch controls. Analytics, store opening, products, prices, legal text, forms, providers and data collection remain separate founder gates. Fourthwall owns products, variants, cart, checkout, payment, taxes, printing, fulfillment, shipping and order handling. Never add custom payment handling.
 
 ## Rollback
 

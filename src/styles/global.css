@@ -26,7 +26,7 @@ main{min-height:65vh}
 .merch-feature{max-width:none;background:#100e0c;padding-inline:max(1rem,calc((100% - 74rem)/2))}
 .merch-feature img{order:0}
 .merch-feature>div{order:1}
-h1,h2,h3{font-family:var(--tavern-font-display);line-height:1.08;margin-top:0}
+h1,h2,h3{font-family:var(--tavern-font-display);line-height:1.08;margin-top:0;overflow-wrap:anywhere}
 h1{font-size:clamp(3.4rem,9vw,7.4rem);max-width:10ch}
 h2{font-size:clamp(2.2rem,5vw,4.2rem)}
 .eyebrow,.tag{text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--tavern-ale-gold-500)}

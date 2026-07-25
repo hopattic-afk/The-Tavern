@@ -10,6 +10,10 @@ describe('public-safe fixtures',()=>{
     const css=readFileSync(new URL('../src/styles/global.css',import.meta.url),'utf8');
     expect(css).toMatch(/img\s*\{[^}]*max-width:\s*100%[^}]*height:\s*auto[^}]*\}/);
   });
+  it('allows headings to wrap inside narrow viewports',()=>{
+    const css=readFileSync(new URL('../src/styles/global.css',import.meta.url),'utf8');
+    expect(css).toMatch(/h1,h2,h3\s*\{[^}]*overflow-wrap:\s*anywhere[^}]*\}/);
+  });
   it('serves responsive website artwork',()=>{
     const home=readFileSync(new URL('../src/pages/index.astro',import.meta.url),'utf8');
     expect(home).toContain('srcset=');

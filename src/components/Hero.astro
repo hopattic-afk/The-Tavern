@@ -1,0 +1,5 @@
+---
+interface Props { eyebrow?: string; title: string; copy: string; imageBase?: string; imageAlt?: string; }
+const { eyebrow='Bad plans. Strong rallies.', title, copy, imageBase='/images/steve-hero', imageAlt='Steve, a rain-soaked feral raccoon innkeeper, watching the Tavern alley' } = Astro.props;
+---
+<section class="hero"><div class="hero-copy"><p class="eyebrow">{eyebrow}</p><h1>{title}</h1><p class="lede">{copy}</p><div class="actions"><slot /></div></div><picture><source type="image/webp" srcset={`${imageBase}-640.webp 640w, ${imageBase}-960.webp 960w, ${imageBase}-1536.webp 1536w`} sizes="100vw"><img src={`${imageBase}-960.webp`} width="1536" height="864" alt={imageAlt} fetchpriority="high"></picture></section>

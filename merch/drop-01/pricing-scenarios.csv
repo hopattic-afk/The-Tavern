@@ -1,0 +1,5 @@
+scenario,product_type,currency,sale_price,base_production_cost,per_order_fees,seller_discount,shipping_subsidy,unit_margin,margin_percent,evidence_status
+template,premium-t-shirt,TBD,TBD,TBD,TBD,0,0,=IF(COUNT(D2:H2)=5,D2-SUM(E2:H2),"TBD"),=IF(AND(ISNUMBER(I2),D2>0),I2/D2,"TBD"),placeholder
+template,hoodie,TBD,TBD,TBD,TBD,0,0,=IF(COUNT(D3:H3)=5,D3-SUM(E3:H3),"TBD"),=IF(AND(ISNUMBER(I3),D3>0),I3/D3,"TBD"),placeholder
+template,mug,TBD,TBD,TBD,TBD,0,0,=IF(COUNT(D4:H4)=5,D4-SUM(E4:H4),"TBD"),=IF(AND(ISNUMBER(I4),D4>0),I4/D4,"TBD"),placeholder
+template,sticker-pack,TBD,TBD,TBD,TBD,0,0,=IF(COUNT(D5:H5)=5,D5-SUM(E5:H5),"TBD"),=IF(AND(ISNUMBER(I5),D5>0),I5/D5,"TBD"),placeholder

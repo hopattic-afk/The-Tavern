@@ -30,3 +30,9 @@ Issue #10 owns evidence and the launch decision. A checked item requires a link 
 - [ ] Founder explicitly approved social publication schedule.
 
 Without all applicable approvals, status is **NO-GO**.
+
+## Current Issue #10 decision
+
+- Local package score: **35.5/100** using `launch-readiness-matrix.json`.
+- Public launch gate: **NO-GO** because critical blockers CB-01 through CB-08 remain open.
+- The score is not launch permission. Website, store and social each require a separate recorded founder approval after Sentinel clearance.

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+  <title id="title">The Tavern wordmark</title><desc id="desc">Provisional original Tavern wordmark with a crooked tankard T.</desc>
+  <path d="M38 28 Q92 16 146 28 L141 51 L110 53 L106 139 Q84 147 62 139 L58 53 L32 51 Z" fill="#D9A441"/>
+  <path d="M108 62 Q156 56 154 96 Q153 124 114 119" fill="none" stroke="#D9A441" stroke-width="14"/>
+  <text x="184" y="105" font-family="Georgia,serif" font-size="72" font-weight="700" fill="#F4E7C5">THE TAVERN</text>
+</svg>

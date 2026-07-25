@@ -32,3 +32,21 @@ Critical path: `#1 -> (#2 + #3) -> #4 -> #5 -> #10`. Commerce: `#2 + #3 -> #6 ->
 - Launch gate: Issue #10 has no critical blocker and founder explicitly approves public deployment/store/social publication.
 
 Existing Issues #2-#10 provide the measurable acceptance criteria for their deliverables. This roadmap sequences them without weakening those criteria.
+
+Issue #2/#3 checkpoint: Issue #2 may provisionally approve Tavern-only palette, typography, wordmark, and non-character mark. Final mascot lockup, character accents, and ALE badge stay blocked until Issue #3 and authority gates are complete.
+
+Issue #3 handoff gate: Steve is the founder-selected private mascot direction. Name/trademark screening, similarity/privacy review, Sentinel review, public/commercial approval, and the #2 mascot-lockup review remain required. The other six legacy character records are archived decision evidence only; production waits for founder-supplied imagery and individual review.
+
+Issue #4 handoff gate: design evidence uses provisional #2/#3 placeholders and keeps incident collection, analytics, forms, providers and Fourthwall integration inactive. Issue #5 implementation is blocked until Sentinel and founder approve the design architecture; that approval does not authorize deployment or publication.
+
+Issue #5 implementation checkpoint: a reversible local Astro build may use clearly labeled provisional #2/#3/#4 inputs. Completion still requires an approved private Netlify preview and verified Fourthwall handoff. Netlify linking/deployment, providers, credentials, collection, analytics, commerce activation and publication remain founder gates.
+
+Issue #6 implementation checkpoint: Drop 01 has a provisional 10 → 5 → 3 concept package across four product types. D01/D02 remain blocked on #2; D03 remains blocked on #2/#3. Vendor specifications, costs, prices, margins, production/shipping facts, account/product creation, sample spending, physical QA and sale activation remain unresolved gates. #10 owns final store-opening approval.
+
+Issue #7 implementation checkpoint: a synthetic-fiction 30 → 10 → 5 → 3 package, reusable SVG studies, captions and silent render candidates exist locally. Status cannot exceed `render-candidate` until #2/#3 identity/character approval, #8 safeguards, rights/privacy/manual QA, Sentinel and founder approval. #9 owns current platform packaging; #10/publication approval remains external.
+
+Issue #8 implementation checkpoint: five schemas, a canonical state/RBAC policy, minimized writer handoff, synthetic tests, disabled full-field prototype and privacy/withdrawal/breach/provider design exist locally. Mode remains `NO COLLECTION`; provider, region, legal text, numeric retention, accounts/credentials/integration and activation require separate founder approval.
+
+Issue #9 implementation checkpoint: a draft 30-day calendar, required launch week, platform bios/assets/templates, copy inventories, fail-closed link structure and review/rollback evidence exist locally. All URLs/accounts/schedules are null and publication is unauthorized; #2/#3/#5/#6/#7/#8, live platform specs, rights/privacy/accessibility/Sentinel/founder and #10 remain gates.
+
+Issue #10 implementation checkpoint: the evidence matrix scores the local package at 35.5/100, but the public gate remains NO-GO. The score cannot override an open critical blocker. Public release requires at least 90/100, zero critical Sentinel findings, and three separate founder decisions for website deployment, store opening and social publication.

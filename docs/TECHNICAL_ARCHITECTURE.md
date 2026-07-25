@@ -2,7 +2,7 @@
 
 ## Decision
 
-Use Astro as the default frontend candidate for Issue #5: the expected site is content-heavy and mostly static, so Astro supports minimal client JavaScript, component reuse, responsive images, and Netlify previews. Validate the choice against Issue #4 designs and Fourthwall's current supported integration before scaffolding; record any change in the decision log.
+The Issue #5 provisional implementation uses Astro with static output and zero hydration for content pages. This remains a proposed product decision until design/Sentinel/founder acceptance. The commerce boundary is a fail-closed HTTPS outbound link to an approved `fourthwall.com` store; no custom cart, checkout, payment fields or payment storage exists.
 
 ## Boundaries
 
@@ -10,7 +10,7 @@ Use Astro as the default frontend candidate for Issue #5: the expected site is c
 - Astro application: public presentation, content rendering, navigation, accessible forms, SEO, and outbound commerce handoff.
 - Repository Markdown/JSON: approved public content at launch; no raw submissions or consent records.
 - Fourthwall: product catalog, variants, cart/checkout, payment, taxes, fulfillment, shipping, and order support.
-- Netlify: preferred private previews and, only after approval, hosting.
+- Netlify: founder-approved host for the noindex pre-launch site at `https://trashtavern.com`; the reachable site is not private access control.
 - Submission provider: undecided until data/privacy gate; must support consent evidence, restricted access, withdrawal, retention, and deletion.
 
 ## Quality targets for Issue #4/#5
@@ -23,7 +23,7 @@ Environment variable names live in `.env.example`; values live only in approved 
 
 ## Delivery
 
-Branch -> local checks -> review -> approved private preview -> acceptance evidence -> founder launch decision. Production deployment, domain/DNS, analytics activation, provider purchases, and credential changes are approval gates. Rollback is the last verified deploy plus disabling affected forms/links.
+Branch -> local checks -> draft review -> noindex custom-domain pre-launch deploy after approval -> hosted acceptance evidence -> founder launch decision. The current domain/host choice is accepted; material deployments, indexing changes, analytics activation, provider purchases, credential changes, commerce and collection remain approval gates. Rollback is the last verified deploy plus disabling affected forms/links.
 
 ## Open decisions
 

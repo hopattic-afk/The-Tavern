@@ -31,6 +31,10 @@ describe('public-safe fixtures',()=>{
       href:'https://alerts.example.com/embed',
       origin:'https://alerts.example.com'
     });
+    expect(resolveAllianceAlertsEmbedUrl('https://alerts.example.com:443/embed')).toEqual({
+      href:'https://alerts.example.com/embed',
+      origin:'https://alerts.example.com'
+    });
     for (const value of [
       '',
       'http://alerts.example.com/embed',
@@ -46,6 +50,7 @@ describe('public-safe fixtures',()=>{
       'https://alerts.example.com/api/admin/dashboard',
       'https://alerts.example.com/embed?view=admin',
       'https://alerts.example.com/embed#history',
+      'https://alerts.example.com:8443/embed',
       'https://user:secret@alerts.example.com/embed'
     ]) expect(resolveAllianceAlertsEmbedUrl(value)).toBeNull();
   });

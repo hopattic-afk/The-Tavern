@@ -22,6 +22,7 @@ export function resolveAllianceAlertsEmbedUrl(value) {
     const isApprovedSurface =
       url.protocol === 'https:' &&
       isPublicAlertsHost &&
+      url.port === '' &&
       url.pathname === EMBED_PATH &&
       url.username === '' &&
       url.password === '' &&

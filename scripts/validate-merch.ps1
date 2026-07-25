@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $drop = Join-Path $root 'merch/drop-01'
-foreach ($path in @('concepts.json','products.json','pricing-scenarios.csv','production-manifest.json','SAMPLE_QA.md','CHECKSUMS.sha256')) { if (-not (Test-Path -LiteralPath (Join-Path $drop $path))) { throw "Missing Drop 01 file: $path" } }
+foreach ($path in @('concepts.json','products.json','pricing-scenarios.csv','production-manifest.json','PROVIDER_EVIDENCE_TEMPLATE.md','SAMPLE_QA.md','CHECKSUMS.sha256')) { if (-not (Test-Path -LiteralPath (Join-Path $drop $path))) { throw "Missing Drop 01 file: $path" } }
 $data = Get-Content -LiteralPath (Join-Path $drop 'concepts.json') -Raw | ConvertFrom-Json
 if ($data.concepts.Count -ne 10) { throw "Expected exactly 10 concepts; found $($data.concepts.Count)." }
 if (($data.concepts | Where-Object refined).Count -ne 5) { throw 'Expected exactly 5 refined concepts.' }
@@ -48,6 +48,10 @@ if (@($manifest.exports | Where-Object rasterExport -ne 'blocked').Count -ne 0) 
 $pricing = Get-Content -LiteralPath (Join-Path $drop 'pricing-scenarios.csv') -Raw
 if ($pricing -match '(?m)^template,[^,]+,[A-Z]{3},\d') { throw 'Pricing template contains an invented currency/price.' }
 if ($pricing -notmatch 'unit_margin,margin_percent' -or $pricing -notmatch '=IF\(') { throw 'Pricing formulas are missing.' }
+$providerTemplate = Get-Content -LiteralPath (Join-Path $drop 'PROVIDER_EVIDENCE_TEMPLATE.md') -Raw
+foreach ($requiredText in @('No provider action','Product/variant/color/size','Unit margin calculation','Maximum total spend','Founder store-opening approval')) {
+  if ($providerTemplate -notmatch [regex]::Escape($requiredText)) { throw "Provider evidence template missing: $requiredText" }
+}
 $checksumLines = Get-Content -LiteralPath (Join-Path $drop 'CHECKSUMS.sha256') | Where-Object { $_.Trim() }
 foreach ($line in $checksumLines) { if ($line -notmatch '^([0-9a-f]{64})  (.+)$') { throw "Invalid checksum line: $line" }; $expected=$Matches[1]; $relative=$Matches[2]; $actual=(Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $root $relative)).Hash.ToLower(); if ($actual -ne $expected) { throw "Checksum mismatch: $relative" } }
 $rights = Get-Content -LiteralPath (Join-Path $root 'docs/ASSET_RIGHTS_REGISTER.md') -Raw

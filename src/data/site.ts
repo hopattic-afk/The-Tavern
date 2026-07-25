@@ -10,7 +10,7 @@ export const tales = [
   { slug:'rain-in-the-cellar', title:'Rain in the Cellar', summary:'Steve investigates weather that has somehow moved indoors.', character:'Steve' },
   { slug:'the-last-clean-tankard', title:'The Last Clean Tankard', summary:'Steve protects the Tavern’s final clean tankard with feral determination.', character:'Steve' }
 ];
-export const notices = ['Steve is the approved mascot direction; additional character imagery remains pending.','The store is not connected and nothing is for sale.','Incident collection is disabled.'];
+export const notices = ['Steve is the founder-selected mascot direction; commercial rights clearance remains pending.','The store is not connected and nothing is for sale.','Incident collection is disabled.'];
 
 export function fourthwallUrl(path = ''): string | null {
   const raw = import.meta.env.PUBLIC_FOURTHWALL_STORE_URL?.trim();

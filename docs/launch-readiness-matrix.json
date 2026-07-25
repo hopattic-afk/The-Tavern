@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-07-13",
+  "asOf": "2026-07-24",
   "localPackageScore": { "earned": 35.5, "possible": 100 },
   "publicLaunchGate": "NO-GO",
   "scoring": { "verified": "full weight", "partial": "half weight", "blocked": "zero", "criticalOverlay": "Any open critical blocker forces NO-GO regardless of score." },
@@ -18,8 +18,8 @@
     {"id":"I10-11","criterion":"Email signup works","domain":"website","weight":3,"status":"blocked","earned":0,"evidence":["docs/ANALYTICS_PLAN.md","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
     {"id":"I10-12","criterion":"Social links work","domain":"content-social","weight":3,"status":"blocked","earned":0,"evidence":["social/platforms.json"],"evidenceDate":"2026-07-13","owner":"TBD-social"},
     {"id":"I10-13","criterion":"Analytics events work","domain":"operations","weight":3,"status":"blocked","earned":0,"evidence":["docs/ANALYTICS_PLAN.md"],"evidenceDate":"2026-07-13","owner":"TBD-analytics"},
-    {"id":"I10-14","criterion":"SEO metadata is present","domain":"website","weight":3,"status":"verified","earned":3,"evidence":["src/layouts/BaseLayout.astro","tests/site.test.ts"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
-    {"id":"I10-15","criterion":"Social previews are correct","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["src/layouts/BaseLayout.astro","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
+    {"id":"I10-14","criterion":"SEO metadata is present","domain":"website","weight":3,"status":"verified","earned":3,"evidence":["src/layouts/BaseLayout.astro","tests/site.test.ts","astro.config.mjs"],"evidenceDate":"2026-07-24","owner":"TBD-site"},
+    {"id":"I10-15","criterion":"Social previews are correct","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["src/layouts/BaseLayout.astro","docs/SITE_OPERATIONS.md","astro.config.mjs"],"evidenceDate":"2026-07-24","owner":"TBD-site"},
     {"id":"I10-16","criterion":"Accessibility testing is documented","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["docs/WEBSITE_DESIGN.md","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-accessibility"},
     {"id":"I10-17","criterion":"Performance testing is documented","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["docs/WEBSITE_DESIGN.md","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-performance"},
     {"id":"I10-18","criterion":"Broken-link testing is complete","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["scripts/validate-site.ps1","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-site"},

@@ -37,3 +37,16 @@ This is the canonical rights inventory. Create one row per asset before it is ad
 - `unclear`, missing evidence, or unresolved similarity means `blocked`.
 - Generated assets record the tool/model, generation date, prompt reference, material edits, and human reviewer; prompts may not reference protected games, artists, characters, franchises, screenshots, or assets.
 - Retired or expired assets stay in the register so prior usage remains auditable.
+
+## Founder-input clearance checklist
+
+Raw files in `founder-input/` are internal inspiration, not registered public assets. Before any derivative enters a tracked production/public folder:
+
+- [ ] The matching founder-input record identifies source, creator, owner, permission evidence, likeness/privacy state, protected references, intended use and elements that must not be copied.
+- [ ] Inspiration/adaptation permission is not represented as publication or commercial clearance.
+- [ ] No human likeness, member identity, private alliance material or protected Kingshot/CenturyGames reference is used.
+- [ ] A new derivative has a distinct filename/version, creation record and rights ID; raw source files remain untracked.
+- [ ] Commercial-use scope, modification, attribution, name/trademark and confusing-similarity evidence are recorded.
+- [ ] Sentinel independently accepts privacy/IP controls and the founder approves the specific publication or commercial use.
+
+Steve remains blocked under `GEN-STEVE-001`; being visible on the founder-authorized noindex pre-launch site does not create commercial clearance.

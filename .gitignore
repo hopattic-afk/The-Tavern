@@ -15,6 +15,14 @@ Thumbs.db
 *.key
 submissions/
 private/
+founder-input/photos/raw/*
+!founder-input/photos/raw/.gitkeep
+founder-input/stories/raw/*
+!founder-input/stories/raw/.gitkeep
+founder-input/characters/raw/*
+!founder-input/characters/raw/.gitkeep
+founder-input/review-state/*
+!founder-input/review-state/.gitkeep
 .astro/
 dist/
 node_modules/

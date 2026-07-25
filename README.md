@@ -6,12 +6,13 @@ The Tavern is an unofficial ALE alliance community brand: medieval trash pandas 
 
 ## Project status
 
-Issue #5 provisional local website build. Brand, roster, design, legal and commerce decisions remain pending. No public site, store, form, analytics or social account is launched from this repository without explicit founder approval.
+Founder-authorized pre-launch website at `https://trashtavern.com`, served by Netlify with noindex controls. Brand/character commercial rights, final legal text, commerce, forms, analytics and social publishing remain blocked. The public-launch decision is still **NO-GO**.
 
 ## Repository map
 
 - `docs/`: authoritative project, creative, technical, privacy, commerce, and launch rules.
 - `content/`: repository-managed public-safe content; never store raw alliance submissions here.
+- `founder-input/`: local, Git-ignored photo/story/character inspiration inbox; never a public submission channel.
 - `public/`: approved original or properly licensed public assets only.
 - `components/`: future reusable site components.
 - `scripts/`: local validation and maintenance tools.
@@ -20,7 +21,7 @@ Issue #5 provisional local website build. Brand, roster, design, legal and comme
 
 1. Read `AGENTS.md`, `docs/PROJECT_BRIEF.md`, and the document relevant to your issue.
 2. Confirm the issue's dependencies in `docs/ROADMAP.md` are complete.
-3. Keep changes on a dedicated branch and use private previews only when approved.
+3. Keep changes on a dedicated branch; deployment or publication requires the applicable founder approval.
 4. Run `pwsh -File scripts/validate-foundation.ps1`.
 5. Record durable decisions in `docs/DECISION_LOG.md`.
 

@@ -48,3 +48,15 @@ The Lighthouse SEO score was 61 because the pre-launch site is intentionally not
 The deployed skip-link now moves keyboard focus to `MAIN#main`. The `/submit/` page had no horizontal overflow at 320, 768, or 1200 CSS pixels; canonical/noindex metadata remained correct and the browser console had no warnings or errors.
 
 The retest found that disabled checkboxes stretched to the grid track width at 320 CSS pixels. The follow-up fix assigns a compact explicit checkbox size and start alignment. It requires the same local checks, independent Sentinel acceptance, approved deployment, and a final hosted `/submit/` retest before CB-02 can close.
+
+## 2026-07-28 final production retest
+
+- Deploy: `6a692121f359e4000850ab26`
+- Commit: `92a33cdaa52205fb5f158f7edac3e908ca6fde07`
+- Result: **PASS — CB-02 closed**
+
+At 320 CSS pixels, `/submit/` measured `clientWidth=320` and `scrollWidth=320`. All five disabled checkboxes measured approximately 17.6 × 17.6 CSS pixels. The homepage skip link set `#main` and moved focus to `MAIN#main`; the homepage also remained free of horizontal overflow at 320px.
+
+Lighthouse was repeated against `https://trashtavern.com/` at `2026-07-28T21:51:13Z`: performance 97, accessibility 100, best practices 100, and intentionally noindex-limited SEO 61. Lab metrics were FCP 1.0s, LCP 1.2s, TBT 200ms, CLS 0, and Speed Index 1.4s.
+
+The deployed code retains noindex metadata and fail-closed collection/commerce controls. No forms, analytics, social publishing, commerce, functions, or edge functions were activated. Lighthouse field p75 Core Web Vitals are not claimed; the final deployed lab run is the current performance baseline.

@@ -14,7 +14,7 @@ foreach ($id in $expectedIds) { if ($actualIds -notcontains $id) { throw "Missin
 $weight = ($matrix.criteria | Measure-Object weight -Sum).Sum
 $earned = ($matrix.criteria | Measure-Object earned -Sum).Sum
 if ($weight -ne 100 -or $matrix.localPackageScore.possible -ne 100) { throw 'Readiness weights must total 100.' }
-if ($earned -ne 35.5 -or $matrix.localPackageScore.earned -ne 35.5) { throw 'Readiness earned score must transparently total 35.5.' }
+if ($earned -ne 48 -or $matrix.localPackageScore.earned -ne 48) { throw 'Readiness earned score must transparently total 48.' }
 foreach ($criterion in $matrix.criteria) {
   if (@('verified','partial','blocked') -notcontains $criterion.status) { throw "Invalid status $($criterion.id)." }
   $expectedEarned = switch ($criterion.status) { 'verified' { $criterion.weight }; 'partial' { $criterion.weight / 2 }; 'blocked' { 0 } }
@@ -22,7 +22,7 @@ foreach ($criterion in $matrix.criteria) {
   if (-not $criterion.domain -or -not $criterion.evidenceDate -or -not $criterion.owner -or @($criterion.evidence).Count -lt 1) { throw "Incomplete evidence fields $($criterion.id)." }
   foreach ($path in $criterion.evidence) { if (-not (Test-Path (Join-Path $root $path))) { throw "Missing evidence path $path." } }
 }
-$truthCeilings = @{ 'I10-02' = 'blocked'; 'I10-03' = 'partial'; 'I10-07' = 'blocked'; 'I10-08' = 'blocked'; 'I10-23' = 'blocked' }
+$truthCeilings = @{ 'I10-07' = 'blocked'; 'I10-08' = 'blocked'; 'I10-23' = 'blocked' }
 foreach ($id in $truthCeilings.Keys) {
   $criterion = $matrix.criteria | Where-Object id -eq $id
   if ($criterion.status -ne $truthCeilings[$id]) { throw "Evidence ceiling changed for $id." }
@@ -34,7 +34,7 @@ foreach ($id in $matrix.criticalBlockers) { if ($report -notmatch [regex]::Escap
 foreach ($id in $matrix.founderDecisions) { if ($report -notmatch [regex]::Escape($id)) { throw "Missing founder decision $id in report." } }
 
 foreach ($heading in @('Launch-readiness score','Completed items','Critical blockers','Noncritical improvements','Founder decisions required','Public-launch procedure','Rollback procedure','First-week monitoring plan')) {
-  if ($report -notmatch "(?m)^## $([regex]::Escape($heading))$") { throw "Missing report section $heading." }
+  if ($report -notmatch "(?m)^## $([regex]::Escape($heading))\r?$") { throw "Missing report section $heading." }
 }
 foreach ($required in @('Current decision: **NO-GO**','FD-06, FD-07 and FD-08 are separate','Rollback drill evidence remains **TBD**','Privacy-safe log template','sandboxed npm execution fails with `EPERM`')) {
   if (-not $report.Contains($required)) { throw "Missing readiness control: $required" }
@@ -42,4 +42,4 @@ foreach ($required in @('Current decision: **NO-GO**','FD-06, FD-07 and FD-08 ar
 if ($report -match '(?i)public launch (is )?(approved|authorized|ready|go)') { throw 'False public-launch approval detected.' }
 if (@($matrix.criteria | Where-Object status -eq 'blocked').Count -lt 1) { throw 'Readiness must retain blocked criteria.' }
 
-Write-Host 'Readiness validation passed: 30 criteria, 35.5/100 arithmetic, critical overlay, NO-GO, blockers, founder decisions, launch/rollback/monitoring controls.'
+Write-Host 'Readiness validation passed: 30 criteria, 48/100 arithmetic, critical overlay, NO-GO, blockers, founder decisions, launch/rollback/monitoring controls.'

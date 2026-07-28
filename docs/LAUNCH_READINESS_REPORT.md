@@ -23,7 +23,7 @@ This score measures local package maturity, not permission to launch. The public
 | ID | Blocker | Exit evidence | Owner |
 |---|---|---|---|
 | CB-01 | Brand, roster, mascot, names, similarity and commercial rights are unapproved. | Recorded rights/name/similarity reviews, Sentinel clearance and founder identity decisions. | TBD-rights |
-| CB-02 | The hosted custom-domain review surface exists, but complete mobile/desktop/accessibility/performance/link/OG evidence is not recorded. | Dated hosted test record at 320/768/1200 covering navigation, keyboard/focus, reduced motion, links, metadata, headers and performance. | TBD-site |
+| CB-02 | Hosted QA on 2026-07-28 passed the route/link/metadata/header and 320/768/1200 matrix and recorded strong Lighthouse lab results, but found skip-link focus and 320px disabled-form overflow defects. Local fixes await an approved deployment and hosted retest. | Deploy the reviewed fixes after approval, complete the dated retest in `docs/HOSTED_QA_EVIDENCE.md`, and obtain Sentinel acceptance. | TBD-site |
 | CB-03 | Fourthwall products, checkout handoff, shipping/returns facts, prices, margins and production times are unverified. | Provider-sourced configuration and end-to-end handoff evidence. | TBD-commerce |
 | CB-04 | Samples were not purchased, received or physically approved. | Completed `SAMPLE_QA.md`, receipts kept outside Git, and founder release. | TBD-commerce |
 | CB-05 | Three assets are silent SVG render candidates, not final platform-ready videos; manual caption/crop/rights QA is pending. | Three final exports plus dated muted/mobile/a11y/rights review. | TBD-content |

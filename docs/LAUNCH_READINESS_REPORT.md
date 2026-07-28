@@ -1,10 +1,10 @@
 # Launch readiness report
 
-As of 2026-07-24. This report evaluates repository evidence plus the observed founder-authorized Netlify custom-domain deployment. It does not claim physical-product, commerce-provider, legal, platform, field-performance or human-rights-review evidence that is not present. Current decision: **NO-GO**.
+As of 2026-07-28. This report evaluates repository evidence plus the observed founder-authorized Netlify custom-domain deployment. It does not claim physical-product, commerce-provider, legal, platform, field-performance or human-rights-review evidence that is not present. Current decision: **NO-GO**.
 
 ## Launch-readiness score
 
-The local package scores **35.5/100**. `docs/launch-readiness-matrix.json` is authoritative: verified earns full weight, partial earns half, and blocked earns zero. Its 30 records cover every Issue #10 acceptance criterion. Mobile, desktop and navigation weigh 4 points each; the safety-critical forms criterion weighs 10; the remaining 26 weigh 3 points each, totaling 100.
+The local package scores **48/100**. `docs/launch-readiness-matrix.json` is authoritative: verified earns full weight, partial earns half, and blocked earns zero. Its 30 records cover every Issue #10 acceptance criterion. Mobile, desktop and navigation weigh 4 points each; the safety-critical forms criterion weighs 10; the remaining 26 weigh 3 points each, totaling 100.
 
 This score measures local package maturity, not permission to launch. The public launch gate is binary. Any open critical blocker forces **NO-GO**, regardless of score. A future score of at least 90/100 is necessary but insufficient: Sentinel must report no critical finding and the founder must separately approve the website, store, and social publication.
 
@@ -16,6 +16,7 @@ This score measures local package maturity, not permission to launch. The public
 - A local-only founder photo/story/character inbox now separates raw inspiration and review state from Git and public builds.
 - Brand, character, design, merch, animation, incident and social draft packages exist with explicit provisional status.
 - Critical blockers, founder decisions and rollback controls are documented here.
+- CB-02 closed on 2026-07-28 after production deploy `6a692121f359e4000850ab26`: mobile/desktop layouts, navigation, keyboard focus, reduced motion, links, metadata, security headers, Lighthouse lab performance/accessibility and the corrected 320px disabled-form layout were verified.
 - No store, form, analytics transport, social account, schedule or submission collection was activated by this work.
 
 ## Critical blockers
@@ -23,7 +24,6 @@ This score measures local package maturity, not permission to launch. The public
 | ID | Blocker | Exit evidence | Owner |
 |---|---|---|---|
 | CB-01 | Brand, roster, mascot, names, similarity and commercial rights are unapproved. | Recorded rights/name/similarity reviews, Sentinel clearance and founder identity decisions. | TBD-rights |
-| CB-02 | Hosted QA and the first production retest on 2026-07-28 passed the route/link/metadata/header and 320/768/1200 matrix, recorded strong Lighthouse lab results, and verified the skip-link and overflow fixes. The retest found stretched disabled checkboxes at 320px; the focused local correction awaits deployment and final hosted retest. | Deploy the checkbox correction, complete the final dated `/submit/` retest in `docs/HOSTED_QA_EVIDENCE.md`, and obtain Sentinel acceptance. | TBD-site |
 | CB-03 | Fourthwall products, checkout handoff, shipping/returns facts, prices, margins and production times are unverified. | Provider-sourced configuration and end-to-end handoff evidence. | TBD-commerce |
 | CB-04 | Samples were not purchased, received or physically approved. | Completed `SAMPLE_QA.md`, receipts kept outside Git, and founder release. | TBD-commerce |
 | CB-05 | Three assets are silent SVG render candidates, not final platform-ready videos; manual caption/crop/rights QA is pending. | Three final exports plus dated muted/mobile/a11y/rights review. | TBD-content |

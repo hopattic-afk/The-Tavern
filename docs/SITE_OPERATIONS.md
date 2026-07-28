@@ -28,7 +28,7 @@ The custom-domain deployment is publicly reachable and must never be described a
 
 Release evidence still needs all routes, custom 404, keyboard/focus and reduced-motion checks, 320/768/1200 layouts, broken links, responsive/lazy images, canonical metadata/social previews, noindex headers, Fourthwall origin/handoff, disabled form states, no secrets/private data/protected assets, and performance results. Hosted p75 Core Web Vitals cannot be claimed without field evidence.
 
-The 2026-07-28 hosted pass is recorded in `docs/HOSTED_QA_EVIDENCE.md`. It passed the route/link/metadata/header matrix but found two defects. Local skip-link-focus and 320px disabled-form-overflow fixes require an approved deployment and hosted retest before CB-02 can close.
+The 2026-07-28 hosted passes are recorded in `docs/HOSTED_QA_EVIDENCE.md`. Production deploy `6a692121f359e4000850ab26` closed CB-02 after the route/link/metadata/header, Lighthouse, keyboard-focus, 320/768/1200 layout and corrected disabled-form checks passed.
 
 ## Deployment and launch
 

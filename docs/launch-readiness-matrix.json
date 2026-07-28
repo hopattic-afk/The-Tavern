@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-07-24",
-  "localPackageScore": { "earned": 35.5, "possible": 100 },
+  "asOf": "2026-07-28",
+  "localPackageScore": { "earned": 48, "possible": 100 },
   "publicLaunchGate": "NO-GO",
   "scoring": { "verified": "full weight", "partial": "half weight", "blocked": "zero", "criticalOverlay": "Any open critical blocker forces NO-GO regardless of score." },
   "criteria": [
-    {"id":"I10-01","criterion":"Website mobile testing is complete","domain":"website","weight":4,"status":"partial","earned":2,"evidence":["tests/site.test.ts","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
-    {"id":"I10-02","criterion":"Website desktop testing is complete","domain":"website","weight":4,"status":"blocked","earned":0,"evidence":["tests/site.test.ts","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
-    {"id":"I10-03","criterion":"Navigation works","domain":"website","weight":4,"status":"partial","earned":2,"evidence":["tests/site.test.ts","design/routes.json"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
+    {"id":"I10-01","criterion":"Website mobile testing is complete","domain":"website","weight":4,"status":"verified","earned":4,"evidence":["docs/HOSTED_QA_EVIDENCE.md","tests/site.test.ts"],"evidenceDate":"2026-07-28","owner":"TBD-site"},
+    {"id":"I10-02","criterion":"Website desktop testing is complete","domain":"website","weight":4,"status":"verified","earned":4,"evidence":["docs/HOSTED_QA_EVIDENCE.md"],"evidenceDate":"2026-07-28","owner":"TBD-site"},
+    {"id":"I10-03","criterion":"Navigation works","domain":"website","weight":4,"status":"verified","earned":4,"evidence":["docs/HOSTED_QA_EVIDENCE.md","design/routes.json"],"evidenceDate":"2026-07-28","owner":"TBD-site"},
     {"id":"I10-04","criterion":"Forms work","domain":"website","weight":10,"status":"blocked","earned":0,"evidence":["src/components/DisabledForm.astro","docs/INCIDENT_SYSTEM.md"],"evidenceDate":"2026-07-13","owner":"TBD-privacy"},
     {"id":"I10-05","criterion":"Fourthwall product links or integration work","domain":"commerce","weight":3,"status":"partial","earned":1.5,"evidence":["src/components/FourthwallHandoff.astro","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-commerce"},
     {"id":"I10-06","criterion":"Checkout handoff works","domain":"commerce","weight":3,"status":"blocked","earned":0,"evidence":["docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-commerce"},
@@ -20,9 +20,9 @@
     {"id":"I10-13","criterion":"Analytics events work","domain":"operations","weight":3,"status":"blocked","earned":0,"evidence":["docs/ANALYTICS_PLAN.md"],"evidenceDate":"2026-07-13","owner":"TBD-analytics"},
     {"id":"I10-14","criterion":"SEO metadata is present","domain":"website","weight":3,"status":"verified","earned":3,"evidence":["src/layouts/BaseLayout.astro","tests/site.test.ts","astro.config.mjs"],"evidenceDate":"2026-07-24","owner":"TBD-site"},
     {"id":"I10-15","criterion":"Social previews are correct","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["src/layouts/BaseLayout.astro","docs/SITE_OPERATIONS.md","astro.config.mjs"],"evidenceDate":"2026-07-24","owner":"TBD-site"},
-    {"id":"I10-16","criterion":"Accessibility testing is documented","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["docs/WEBSITE_DESIGN.md","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-accessibility"},
-    {"id":"I10-17","criterion":"Performance testing is documented","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["docs/WEBSITE_DESIGN.md","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-performance"},
-    {"id":"I10-18","criterion":"Broken-link testing is complete","domain":"website","weight":3,"status":"partial","earned":1.5,"evidence":["scripts/validate-site.ps1","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-site"},
+    {"id":"I10-16","criterion":"Accessibility testing is documented","domain":"website","weight":3,"status":"verified","earned":3,"evidence":["docs/HOSTED_QA_EVIDENCE.md","docs/WEBSITE_DESIGN.md"],"evidenceDate":"2026-07-28","owner":"TBD-accessibility"},
+    {"id":"I10-17","criterion":"Performance testing is documented","domain":"website","weight":3,"status":"verified","earned":3,"evidence":["docs/HOSTED_QA_EVIDENCE.md"],"evidenceDate":"2026-07-28","owner":"TBD-performance"},
+    {"id":"I10-18","criterion":"Broken-link testing is complete","domain":"website","weight":3,"status":"verified","earned":3,"evidence":["docs/HOSTED_QA_EVIDENCE.md","scripts/validate-site.ps1"],"evidenceDate":"2026-07-28","owner":"TBD-site"},
     {"id":"I10-19","criterion":"Merchandise samples were received and reviewed","domain":"commerce","weight":3,"status":"blocked","earned":0,"evidence":["merch/drop-01/SAMPLE_QA.md"],"evidenceDate":"2026-07-13","owner":"TBD-commerce"},
     {"id":"I10-20","criterion":"Product colors, quality, and sizing are verified","domain":"commerce","weight":3,"status":"blocked","earned":0,"evidence":["merch/drop-01/SAMPLE_QA.md"],"evidenceDate":"2026-07-13","owner":"TBD-commerce"},
     {"id":"I10-21","criterion":"Product prices and margins are verified","domain":"commerce","weight":3,"status":"blocked","earned":0,"evidence":["merch/drop-01/pricing-scenarios.csv"],"evidenceDate":"2026-07-13","owner":"TBD-commerce"},
@@ -36,6 +36,6 @@
     {"id":"I10-29","criterion":"A rollback plan exists","domain":"operations","weight":3,"status":"verified","earned":3,"evidence":["docs/LAUNCH_READINESS_REPORT.md","docs/SITE_OPERATIONS.md"],"evidenceDate":"2026-07-13","owner":"TBD-release"},
     {"id":"I10-30","criterion":"Nothing is made public until the founder approves launch","domain":"governance","weight":3,"status":"verified","earned":3,"evidence":["AGENTS.md","docs/LAUNCH_CHECKLIST.md","social/campaign.json"],"evidenceDate":"2026-07-13","owner":"Founder"}
   ],
-  "criticalBlockers": ["CB-01","CB-02","CB-03","CB-04","CB-05","CB-06","CB-07","CB-08"],
+  "criticalBlockers": ["CB-01","CB-03","CB-04","CB-05","CB-06","CB-07","CB-08"],
   "founderDecisions": ["FD-01","FD-02","FD-03","FD-04","FD-05","FD-06","FD-07","FD-08"]
 }

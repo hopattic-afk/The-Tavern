@@ -38,3 +38,13 @@ The Lighthouse SEO score was 61 because the pre-launch site is intentionally not
 - Repeat the 320/768/1200 hosted matrix, skip-link keyboard test, horizontal-overflow check, reduced-motion check, route/link scan, and console-error scan against the deployed SHA.
 - Repeat Lighthouse after deployment. Field p75 Core Web Vitals require real field data and are not claimed here.
 - Obtain independent Sentinel acceptance before closing CB-02.
+
+## 2026-07-28 production retest
+
+- Deploy: `6a691f5209cc5a00084e6579`
+- Commit: `db1277dd8c48a06c3a9840bf734c55c557313ade`
+- Result: **PARTIAL — CB-02 remains open pending one checkbox-layout fix and final retest**
+
+The deployed skip-link now moves keyboard focus to `MAIN#main`. The `/submit/` page had no horizontal overflow at 320, 768, or 1200 CSS pixels; canonical/noindex metadata remained correct and the browser console had no warnings or errors.
+
+The retest found that disabled checkboxes stretched to the grid track width at 320 CSS pixels. The follow-up fix assigns a compact explicit checkbox size and start alignment. It requires the same local checks, independent Sentinel acceptance, approved deployment, and a final hosted `/submit/` retest before CB-02 can close.

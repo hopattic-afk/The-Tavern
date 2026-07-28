@@ -14,6 +14,16 @@ describe('public-safe fixtures',()=>{
     const css=readFileSync(new URL('../src/styles/global.css',import.meta.url),'utf8');
     expect(css).toMatch(/h1,h2,h3\s*\{[^}]*overflow-wrap:\s*anywhere[^}]*\}/);
   });
+  it('keeps disabled forms within narrow viewports',()=>{
+    const css=readFileSync(new URL('../src/styles/global.css',import.meta.url),'utf8');
+    expect(css).toMatch(/\.disabled-form,\.disabled-form fieldset\s*\{[^}]*min-width:\s*0[^}]*\}/);
+    expect(css).toMatch(/input:not\(\[type="checkbox"\]\),textarea\s*\{[^}]*width:\s*100%[^}]*max-width:\s*100%[^}]*\}/);
+    expect(css).toMatch(/input\[type="checkbox"\]\s*\{[^}]*width:\s*auto[^}]*\}/);
+  });
+  it('provides a focusable skip-link target',()=>{
+    const layout=readFileSync(new URL('../src/layouts/BaseLayout.astro',import.meta.url),'utf8');
+    expect(layout).toContain('<main id="main" tabindex="-1">');
+  });
   it('serves responsive website artwork',()=>{
     const home=readFileSync(new URL('../src/pages/index.astro',import.meta.url),'utf8');
     expect(home).toContain('srcset=');

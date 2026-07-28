@@ -28,6 +28,8 @@ The custom-domain deployment is publicly reachable and must never be described a
 
 Release evidence still needs all routes, custom 404, keyboard/focus and reduced-motion checks, 320/768/1200 layouts, broken links, responsive/lazy images, canonical metadata/social previews, noindex headers, Fourthwall origin/handoff, disabled form states, no secrets/private data/protected assets, and performance results. Hosted p75 Core Web Vitals cannot be claimed without field evidence.
 
+The 2026-07-28 hosted pass is recorded in `docs/HOSTED_QA_EVIDENCE.md`. It passed the route/link/metadata/header matrix but found two defects. Local skip-link-focus and 320px disabled-form-overflow fixes require an approved deployment and hosted retest before CB-02 can close.
+
 ## Deployment and launch
 
 Netlify continuous deployment is founder-authorized from the GitHub repository `hopattic-afk/The-Tavern`, using build command `npm run build` and publish directory `dist`. PR #22 merged as merge commit `175bf0f`, and the founder approved switching the Netlify production branch from `codex/atlas-content-readiness` to the stable branch `codex/issue-1-foundation`. Stable deploy `6a64f72dc2debf7ff30ba672` is ready from commit `175bf0f`. Every push to `codex/issue-1-foundation` can now update the production site and must be treated as a production deployment.
